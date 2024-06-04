@@ -31,7 +31,8 @@ module tetris_logic(
     output reg[4:0] square_x,
     output reg[4:0] square_y,
     output reg[2:0] square_type,
-    output reg[1:0] square_degree
+    output reg[1:0] square_degree,
+    output reg [15:0] score
     );
     parameter I = 3'b000, J = 3'b001, L = 3'b010, Z = 3'b011, S = 3'b100, T = 3'b101, O = 3'b110;
     parameter   INIT = 3'b000, 
@@ -51,13 +52,15 @@ module tetris_logic(
     reg [4:0] next_x, next_y;
     reg [2:0] rand_num;
     reg [31:0] count_time;
+    reg [4:0] complete_rows [19:0];//a
+    reg [4:0] complete_num;//a
     wire [1:0] act;
     assign act = (keyboard_data == 8'h1c) ? LEFT 
                 :(keyboard_data == 8'h23) ? RIGHT
                 :(keyboard_data == 8'h1d) ? ROTATE
                 :FALL;
     assign over_sig = over_sig_r;
-    integer i,j,k;
+    integer i,j,m,k,flag;
     integer shape[6:0][3:0][3:0];
     initial begin
         // Row 0
@@ -110,6 +113,7 @@ module tetris_logic(
         end 
         if(rst || !start_sig) begin
             map <= 0;
+            score <= 0;
             over_sig_r <= 1;
             state <= INIT;
         end
@@ -148,11 +152,12 @@ module tetris_logic(
                     case (act)
                         FALL: begin
                             next_x <= square_x;
-                            next_y <= square_y;
+                            next_y <= square_y + 1; 
                             for(i = 0; i < 4; i = i+1) begin
-                                if(map[10*next_y+next_x+shape[square_type][square_degree][i]] == 1) 
+                                if(map[10*next_y+next_x+shape[square_type][square_degree][i]] == 1 
+                                    || 10*next_y+next_x+shape[square_type][square_degree][i] > 199) 
                                     isMovable = 0;
-                            end
+                            end               
                             if(isMovable) begin
                                 square_x <= next_x;
                                 square_y <= next_y;
@@ -166,11 +171,12 @@ module tetris_logic(
                         end
                         LEFT: begin
                             next_x = square_x-1;
-                            next_y = square_y;
+                            next_y = square_y;                                               
                             for(i = 0; i < 4; i = i+1) begin
-                                if(map[10*next_y+next_x+shape[square_type][square_degree][i]] == 1) 
+                                if(map[10*next_y+next_x+shape[square_type][square_degree][i]] == 1 
+                                    || 10*next_y+next_x+shape[square_type][square_degree][i] / 10 != 10*square_y+square_x+shape[square_type][square_degree][i] / 10 ) 
                                     isMovable = 0;
-                            end
+                            end                           
                             if(isMovable) begin
                                 square_x <= next_x;
                                 square_y <= next_y;
@@ -184,11 +190,12 @@ module tetris_logic(
                         end
                         RIGHT: begin
                             next_x = square_x + 1;
-                            next_y = square_y;
-                            for(i = 0; i < 4; i = i+1) begin
-                                if(map[10*next_y+next_x+shape[square_type][square_degree][i]] == 1) 
-                                    isMovable = 0;
-                            end
+                            next_y = square_y;                       
+                                for(i = 0; i < 4; i = i+1) begin
+                                    if(map[10*next_y+next_x+shape[square_type][square_degree][i]] == 1
+                                        || 10*next_y+next_x+shape[square_type][square_degree][i] / 10 != 10*square_y+square_x+shape[square_type][square_degree][i] / 10) 
+                                        isMovable = 0;
+                                end                   
                             if(isMovable) begin
                                 square_x <= next_x;
                                 square_y <= next_y;
@@ -203,11 +210,12 @@ module tetris_logic(
                         ROTATE:begin
                             next_x = square_x;
                             next_y = square_y;
-                            
+                            if(square_type == I && (square_x > 7 || square_x < 1 || square_y > 18))begin
+                                isMovable = 0;
+                            end
                             for(i = 0; i < 4; i = i+1) begin
                                 if(map[10*next_y+next_x+shape[square_type][square_degree+2'b01][i]] == 1)
                                     isMovable = 0;
-                                
                             end
                             if(isMovable) begin
                                 square_x <= next_x;
@@ -232,17 +240,54 @@ module tetris_logic(
                     state <= CHECK_COMPLETE_ROW;
                 end
                 CHECK_COMPLETE_ROW: begin
-                    
+                    complete_num <= 0;
+                    for(j = 0;j < 20;j = j+1)begin
+                        flag <= 0;
+                        for(m = j*10;m < j*10+10; m= m+1)begin
+                            if(!map[m])begin
+                                flag <= 1;
+                                break;
+                            end
+                        end
+                        if(!flag)begin
+                            complete_rows[complete_num] <= j;
+                            complete_num <= complete_num + 1;
+                            score <= 1 + 2*score; 
+                        end
+                    end
+                    if(complete_num > 0)begin
+                        state <= DELETE_ROW;
+                    end
+                    else begin
+                        state <= CHECK_IF_OVER;
+                    end
                 end
-                DELETE_ROW:begin
 
+                DELETE_ROW: begin
+                    for (k = complete_num -1; k >= 0; k = k - 1) begin
+                        for (i = complete_rows[k]; i < 19; i = i + 1) begin
+                            map[i*10+:10] <= map[(i+1)*10+:10];
+                        end
+                        map[190+:10] <= 10'b0;
+                    end
+                    state <= CHECK_COMPLETE_ROW;
                 end
+
                 CHECK_IF_OVER:begin
-
+                    isOver <= 0;
+                    if(map[150:159]==10'b1)begin
+                        isOver <= 1;
+                    end
+                    if(isOver)begin
+                        over_sig_r <= 1;
+                        state <= INIT;
+                    end
+                    else begin
+                        state <= GENERATOR;
+                    end
                 end
                 default: state <= INIT;
             endcase
         end
-
     end
 endmodule
