@@ -105,14 +105,14 @@ module tetris_logic(
         shape[6][2][0] = 0; shape[6][2][1] = 1; shape[6][2][2] = 10; shape[6][2][3] = 11;
         shape[6][3][0] = 0; shape[6][3][1] = 1; shape[6][3][2] = 10; shape[6][3][3] = 11;
     end
-
+    
     always @(posedge clk) begin
         rand_num <= rand_num + 3'b001;
         if(rand_num == 7 ) begin
             rand_num <= 3'b000;
         end 
         if(rst || !start_sig) begin
-            map <= 0;
+            map <= 200'b0;
             score <= 0;
             over_sig_r <= 1;
             state <= INIT;
@@ -246,7 +246,6 @@ module tetris_logic(
                         for(m = j*10;m < j*10+10; m= m+1)begin
                             if(!map[m])begin
                                 flag <= 1;
-                                break;
                             end
                         end
                         if(!flag)begin
@@ -264,18 +263,18 @@ module tetris_logic(
                 end
 
                 DELETE_ROW: begin
-                    for (k = complete_num -1; k >= 0; k = k - 1) begin
-                        for (i = complete_rows[k]; i < 19; i = i + 1) begin
-                            map[i*10+:10] <= map[(i+1)*10+:10];
+                    for (k = 0; k < complete_num; k = k + 1) begin
+                        for (i = complete_rows[k]; i > 0; i = i - 1) begin
+                            map[i*10+:10] <= map[(i-1)*10+:10];                       
                         end
-                        map[190+:10] <= 10'b0;
+                        map[0+:10] <= 10'b0;
                     end
-                    state <= CHECK_COMPLETE_ROW;
+                    state <= GENERATOR;
                 end
 
                 CHECK_IF_OVER:begin
                     isOver <= 0;
-                    if(map[150:159]==10'b1)begin
+                    if(map[30+:10]!=10'b0)begin
                         isOver <= 1;
                     end
                     if(isOver)begin
@@ -286,7 +285,6 @@ module tetris_logic(
                         state <= GENERATOR;
                     end
                 end
-                default: state <= INIT;
             endcase
         end
     end

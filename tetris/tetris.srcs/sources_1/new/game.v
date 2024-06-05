@@ -24,12 +24,13 @@ module game(
     input clk,
     input rst,
     input [7:0] keyboard_data,
-    input keyboard_ready,
-    output  square_x,
-    output  square_y,
-    output  square_type,
-    
+    input   keyboard_ready,
+    output  [4:0]square_x,
+    output  [4:0]square_y,
+    output  [2:0]square_type,
+    output  [1:0]square_degree,
     output [199:0] map,
+    output [15:0] score,
     output reg [1:0] state
     );
     parameter Start = 2'b00, Playing = 2'b01, Over = 2'b10;
@@ -45,8 +46,13 @@ module game(
                             .square_type(square_type),
                             .square_x(square_x),
                             .square_y(square_y),
+                            .square_degree(square_degree),
                             .over_sig(over_sig),
+                            .score(score),
                             .map(map));
+    initial begin
+        state <= Playing;    
+    end
     always @(posedge clk) begin
         case (state)
             Start: begin

@@ -24,6 +24,36 @@ module top (
 	wire keyboard_ready;
 	PS2_Keyboard_Driver pkd(.clk(clk), .rst(rst), .rdn(1'b0), .data(keyboard_data), .ready(keyboard_ready));
 
+	wire [199:0] map;
+	wire [4:0] square_x;
+	wire [4:0] square_y;
+	wire [2:0] square_type;
+	wire [1:0] square_degree;
+	wire [1:0] state;
+	wire [15:0] score;
+ 	game game0(	.clk(clk), 
+				.rst(rst), 
+				.keyboard_data(keyboard_data), 
+				.keyboard_ready(keyboard_ready),
+				.square_degree(square_degree),
+				.square_type(square_type),
+				.square_x(square_x),
+				.square_y(square_y),
+				.map(map),
+				.score(score),
+				.state(state));
+	display dis(.clk(clk), 
+				.rst(rst), 
+				.square_degree(square_degree),
+				.square_type(square_type),
+				.square_x(square_x),
+				.square_y(square_y),
+				.map(map),
+				.score(score),
+				.state(state),
+				.row(row),
+				.col(col),
+				.color(pixel));
 	DispNum displaynumber(.clk100HZ(clk100HZ), .rst(rst), .HEXS(16'h1234), .EN(4'b1111), .P(4'b0000), .SEG(SEG), .AN(AN));
 	
 endmodule	
