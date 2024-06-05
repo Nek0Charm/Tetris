@@ -5,11 +5,11 @@ SW Build: 4029153 on Fri Oct 13 20:14:34 MDT 2023
 IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
 IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
 
-Process ID (PID): 16896
+Process ID (PID): 6016
 License: Customer
 Mode: GUI Mode
 
-Current time: 	Wed Jun 05 17:12:18 GMT+08:00 2024
+Current time: 	Wed Jun 05 20:28:53 GMT+08:00 2024
 Time zone: 	GMT+08:00 (GMT+08:00)
 
 OS: Windows 11
@@ -52,13 +52,13 @@ Vivado layouts directory: C:/Users/csy/AppData/Roaming/Xilinx/Vivado/2023.2/data
 PlanAhead jar file: 	D:/xilinx/Vivado/2023.2/lib/classes/planAhead.jar
 Vivado log file: 	C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/vivado.log
 Vivado journal file: 	C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/vivado.jou
-Engine tmp dir: 	C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/.Xil/Vivado-16896-LAPTOP-LCA5B7K9
+Engine tmp dir: 	C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/.Xil/Vivado-6016-LAPTOP-LCA5B7K9
 Non-Default Parameters:	[]
 
 Xilinx & AMD Environment Variables
 --------------------------------------------------------------------------------------------
 RDI_APPROOT: D:/xilinx/Vivado/2023.2
-RDI_ARGS:  -gui_launcher_event rodinguilauncherevent5056 "C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris\tetris.xpr"
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent25508 "C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris\tetris.xpr"
 RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
 RDI_BASEROOT: D:/xilinx/Vivado
 RDI_BINDIR: D:/xilinx/Vivado/2023.2/bin
@@ -86,7 +86,7 @@ RDI_PYTHON3_VERSION: 3.8.3
 RDI_PYTHONHOME: D:/xilinx/Vivado/2023.2\tps\win64\python-3.8.3
 RDI_PYTHONPATH: D:/xilinx/Vivado/2023.2\tps\win64\python-3.8.3;D:/xilinx/Vivado/2023.2\tps\win64\python-3.8.3\bin;D:/xilinx/Vivado/2023.2\tps\win64\python-3.8.3\lib;D:/xilinx/Vivado/2023.2\tps\win64\python-3.8.3\lib\site-packages
 RDI_PYTHON_LD_LIBPATH: D:/xilinx/Vivado/2023.2\tps\win64\python-3.8.3\lib
-RDI_SESSION_INFO: C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris:LAPTOP-LCA5B7K9-2024-06-05周三_17-11-30.00
+RDI_SESSION_INFO: C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris:LAPTOP-LCA5B7K9-2024-06-05周三_20-28-29.64
 RDI_SHARED_DATA: D:/xilinx/SharedData/2023.2/data
 RDI_TPS_ROOT: D:/xilinx/Vivado/2023.2/tps/win64
 RDI_USE_JDK17: True
@@ -103,7 +103,7 @@ _RDI_CWD: C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris
 
 GUI allocated memory:	512 MB
 GUI max memory:		4,072 MB
-Engine allocated memory: 975 MB
+Engine allocated memory: 1,059 MB
 
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
@@ -113,19 +113,17 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // TclEventType: START_GUI
 // Tcl Message: start_gui 
 // TclEventType: PROJECT_OPEN_DIALOG
-// [GUI Memory]: 95 MB (+96938kb) [00:00:18]
-// [Engine Memory]: 804 MB (+691911kb) [00:00:18]
+// [GUI Memory]: 103 MB (+105594kb) [00:00:13]
+// [Engine Memory]: 834 MB (+722663kb) [00:00:13]
 // Opening Vivado Project: C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris\tetris.xpr. Version: Vivado v2023.2 
 // TclEventType: DEBUG_PROBE_SET_CHANGE
 // TclEventType: FLOW_ADDED
 // Tcl Message: open_project C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.xpr 
-// HMemoryUtils.trashcanNow. Engine heap size: 1,031 MB. GUI used memory: 74 MB. Current time: 6/5/24, 5:12:19 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,094 MB. GUI used memory: 74 MB. Current time: 6/5/24, 8:28:54 PM GMT+08:00
 // TclEventType: MSGMGR_MOVEMSG
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: FILE_SET_NEW
-// TclEventType: RUN_COMPLETED
-// TclEventType: RUN_STATUS_CHANGE
-// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
 // TclEventType: RUN_STATUS_CHANGE
 // TclEventType: RUN_CURRENT
 // TclEventType: PROJECT_DASHBOARD_NEW
@@ -142,13 +140,10 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // TclEventType: PROJECT_DASHBOARD_GADGET_NEW
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
 // TclEventType: PROJECT_NEW
-// [GUI Memory]: 137 MB (+38981kb) [00:00:27]
-// [Engine Memory]: 1,183 MB (+355063kb) [00:00:27]
-// WARNING: HEventQueue.dispatchEvent() is taking  2301 ms.
+// [GUI Memory]: 125 MB (+17560kb) [00:00:20]
+// [Engine Memory]: 1,156 MB (+293900kb) [00:00:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  1893 ms.
 // Tcl Message: open_project C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.xpr 
 // Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.gen/sources_1'. 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2023.2/data/ip'. 
-// [Engine Memory]: 1,260 MB (+18952kb) [00:00:29]
-// Tcl Message: open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1618.039 ; gain = 418.305 
-// Project name: tetris; location: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris; part: xc7k160tffg676-2L

@@ -52,7 +52,7 @@ module tetris_logic(
     reg [4:0] next_x, next_y;
     reg [2:0] rand_num;
     reg [31:0] count_time;
-    reg [4:0] complete_rows [19:0];//a
+    reg [4:0] complete_rows;//a
     reg [4:0] complete_num;//a
     wire [1:0] act;
     assign act = (keyboard_data == 8'h1c) ? LEFT 
@@ -240,37 +240,35 @@ module tetris_logic(
                     state <= CHECK_COMPLETE_ROW;
                 end
                 CHECK_COMPLETE_ROW: begin
-                    complete_num <= 0;
+                    complete_rows <= 0;
+                    flag <= 0;
                     for(j = 0;j < 20;j = j+1)begin
-                        flag <= 0;
-                        for(m = j*10;m < j*10+10; m= m+1)begin
-                            if(!map[m])begin
-                                flag <= 1;
-                            end
-                        end
-                        if(!flag)begin
-                            complete_rows[complete_num] <= j;
-                            complete_num <= complete_num + 1;
-                            score <= 1 + 2*score; 
-                        end
+                        if(&map[j*10+:10]) begin
+                            complete_rows <= j;
+                            flag <= 1;
+                            score <= score << 1;
+                        end 
                     end
-                    if(complete_num > 0)begin
+                    
+                    if (flag) begin
+                        i <= complete_rows;
                         state <= DELETE_ROW;
                     end
                     else begin
                         state <= CHECK_IF_OVER;
                     end
                 end
-
                 DELETE_ROW: begin
-                    for (k = 0; k < complete_num; k = k + 1) begin
-                        for (i = complete_rows[k]; i > 0; i = i - 1) begin
-                            map[i*10+:10] <= map[(i-1)*10+:10];                       
-                        end
-                        map[0+:10] <= 10'b0;
+                    if(i > 0) begin
+                        map[i*10+:10] <= map[(i-1)*10+:10];
+                        i = i-1;
                     end
-                    state <= GENERATOR;
+                    else begin
+                        map[0+:10] <= 10'b0;
+                        state <= CHECK_COMPLETE_ROW;
+                    end
                 end
+
 
                 CHECK_IF_OVER:begin
                     isOver <= 0;
