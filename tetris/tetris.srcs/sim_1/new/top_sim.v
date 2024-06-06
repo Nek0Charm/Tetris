@@ -29,6 +29,7 @@ module top_sim(
     wire HS,VS;
     wire [7:0] SEG;
     wire [3:0] AN;
+    wire [6:0]LED;
     assign rst = 0;
     initial begin
         clk = 0;
@@ -37,5 +38,5 @@ module top_sim(
         clk = ~clk;
         #10;
     end
-    top m0(.clk(clk), .rst(rst), .R(R), .G(G), .B(B), .HS(HS), .VS(VS), .SEG(SEG), .AN(AN));
+    top m0(.clk(clk), .rst(rst),.SW(16'h0000), .BTNX(4'b1111),.BTNY(4'b1111), .R(R), .G(G), .B(B), .HS(HS), .VS(VS), .SEG(SEG), .AN(AN), .LED(LED));
 endmodule

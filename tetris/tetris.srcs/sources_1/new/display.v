@@ -17,8 +17,17 @@ module display(
     parameter Start = 2'b00, Playing = 2'b01, Over = 2'b10;
     parameter   White = 12'b111111111111,
                 Black = 12'b000000000000,
-                Green = 12'h0f0,
+                Blue = 12'h00f,
                 Grey = 12'h777;
+    parameter h_start = 11'd0;  
+    parameter v_start = 11'd0;
+    parameter border_width = 11'd5;
+    parameter game_area_width = 11'd99;
+    parameter game_area_height = 11'd199;
+    parameter square = 11'd9;
+    parameter firstnet_h = 11'd14;
+    parameter firstnet_v = 11'd14;
+    parameter netdistance = 11'd10;
 
     integer shape[6:0][3:0][3:0];
     initial begin
@@ -70,27 +79,57 @@ module display(
             color = White;
         end
         Playing:begin
-            if(row < 200  && col < 100) begin
-                if(map[row/10 * 10 + col / 10] == 1) begin
+          if( rst )
+            color <= 12'hfff;
+          else if( (col >= h_start && col < h_start + border_width && 
+                   row >= v_start && row < v_start + 2 * border_width + game_area_height)
+                ||(col >= h_start + border_width + game_area_width && col < h_start + game_area_width + 2 * border_width && 
+                   row >= v_start && row < v_start + 2 * border_width + game_area_height)
+                ||(col >= h_start + border_width && col < h_start + border_width + game_area_width && 
+                   row >= v_start && row < v_start + border_width )
+                ||(col >= h_start + border_width && col < h_start + border_width + game_area_width && 
+                   row >= v_start + border_width + game_area_height && row < v_start + 2 * border_width + game_area_height )   
+                   )  //border 
+             color <= 12'h000;
+          else if((col == firstnet_h || col == firstnet_h + netdistance || col == firstnet_h + netdistance * 2 || 
+                 col == firstnet_h + netdistance * 3 || col == firstnet_h + netdistance * 4 || col == firstnet_h + netdistance * 5 || 
+                 col == firstnet_h + netdistance * 6 || col == firstnet_h + netdistance * 7 || col == firstnet_h + netdistance * 8 ||
+                 row == firstnet_v || row == firstnet_v + netdistance || row == firstnet_v + netdistance * 2 || 
+                 row == firstnet_v + netdistance * 3 || row == firstnet_v + netdistance * 4 || row == firstnet_v + netdistance * 5 || 
+                 row == firstnet_v + netdistance * 6 || row == firstnet_v + netdistance * 7 || row == firstnet_v + netdistance * 8 ||
+                 row == firstnet_v + netdistance * 9 || row == firstnet_v + netdistance * 10 || row == firstnet_v + netdistance * 11 || 
+                 row == firstnet_v + netdistance * 12 || row == firstnet_v + netdistance * 13 || row == firstnet_v + netdistance * 14 ||
+                 row == firstnet_v + netdistance * 15 || row == firstnet_v + netdistance * 16 || row == firstnet_v + netdistance * 17 || 
+                 row == firstnet_v + netdistance * 18 ) && (col >= h_start + border_width && col < h_start + border_width + game_area_width ) &&
+                 (row >= v_start && row < v_start + 2 * border_width + game_area_height)
+                ) //net 
+             color <= 12'h000;        
+             
+              
+            if(row>=5&&row < 205  && col>=5&&col < 105) begin
+                if(map[(row-5)/10 * 10 + (col-5) / 10] == 1) begin
                     color = Grey;
                 end
                 else  begin
-                    if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][0])
-                            color = White;
-                    else if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][1])
-                            color = White;
-                    else if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][2])
-                            color = White;
-                    else if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][3])
-                            color = White;
+                    if((row-5)/10 * 10 + (col-5) / 10 == square_y*10+square_x+shape[square_type][square_degree][0])
+                            color = Blue;
+                    else if((row-5)/10 * 10 + (col-5) / 10 == square_y*10+square_x+shape[square_type][square_degree][1])
+                            color = Blue;
+                    else if((row-5)/10 * 10 + (col-5) / 10 == square_y*10+square_x+shape[square_type][square_degree][2])
+                            color = Blue;
+                    else if((row-5)/10 * 10 + (col-5) / 10 == square_y*10+square_x+shape[square_type][square_degree][3])
+                            color = Blue;
+                    else 
+                        color = White;
                 end
             end
-            else begin
-                color = Black;        
-            end
+            else if(row<210&&col<110)
+                color = Black;
+            else
+                color = White;
         end
         Over: begin
-            color = Green;
+            color = Blue;
         end
         endcase
     end

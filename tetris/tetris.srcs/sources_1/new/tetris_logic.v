@@ -50,7 +50,7 @@ module tetris_logic(
     reg isDelete;
     reg [2:0] state;
     reg [4:0] next_x, next_y;
-    reg [2:0] rand_num;
+    reg [7:0] rand_num;
     reg [31:0] count_time;
     reg [4:0] complete_rows;//a
     reg [4:0] complete_num;//a
@@ -59,6 +59,7 @@ module tetris_logic(
                 :(keyboard_data == 8'h23 && keyboard_ready) ? RIGHT
                 :(keyboard_data == 8'h1d && keyboard_ready) ? ROTATE
                 :FALL;
+    reg [1:0] act_r;
     assign over_sig = over_sig_r;
     integer i,j,m,k,flag;
     integer shape[6:0][3:0][3:0];
@@ -112,10 +113,7 @@ module tetris_logic(
     end
     
     always @(posedge clk) begin
-        rand_num = rand_num + 3'b001;
-        if(rand_num == 7 ) begin
-            rand_num = 3'b000;
-        end 
+        rand_num = rand_num + 1;
         if(rst || !start_sig) begin
             map <= 200'b0;
             score <= 0;
@@ -133,14 +131,15 @@ module tetris_logic(
                     end
                 end
                 GENERATOR: begin
-                    square_type <= rand_num;
-                    square_x <= 5;
+                    square_type <= rand_num[3:0] % 7;
+                    square_x <= rand_num[7:4] % 6 + 2;
                     square_y <= 2;
                     state <= WAIT;
                     count_time <= 0;
                 end 
                 WAIT: begin
                     if(act != FALL) begin
+                        act_r = act;
                         state <= CHECK_IF_MOVABLE;
                     end
                     if(count_time < 50000000) begin
@@ -149,12 +148,13 @@ module tetris_logic(
                     end
                     else begin
                         count_time <= 0;
+                        act_r = FALL;
                         state <= CHECK_IF_MOVABLE;
                     end
                 end
                 CHECK_IF_MOVABLE: begin
                     isMovable = 1;
-                    case (act)
+                    case (act_r)
                         FALL: begin
                             next_x = square_x;
                             next_y = square_y + 1; 

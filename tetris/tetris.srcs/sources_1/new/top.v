@@ -1,22 +1,57 @@
 module top (
-	input clk,					//FPGA板上的时钟信�?
+	input clk,					//FPGA板上的时钟信�????
     input rst,					//重置信号
 	input PS2C,					//键盘脉冲信号
 	input PS2D,					//键盘数据信号
+	//input [3:0] BTNX,
+	//input [3:0] BTNY,
+	//input [14:0] SW,
     output [3:0] R, G, B,		//VGA
     output HS, VS,
-	output [7:0] SEG,			//七段数码�?
-    output [3:0] AN
+	output [7:0] SEG,			//七段数码�????
+    output [3:0] AN,
+	output [7:0] LED
 );
 
     wire clk25MHZ;
 	wire [1:0] clk100HZ;
 	clk_div divider(.clk(clk), .clk25MHZ(clk25MHZ), .clk100HZ_2b(clk100HZ));
+	
+	/*wire LeftButton;
+	wire RightButton;
+	wire RotateButton;
+	Anti_jitter left(.clk(clk), .BTN(~BTNX[0] & ~BTNY[0]), .BTN_OK(LeftButton));
+	Anti_jitter right(.clk(clk), .BTN(~BTNX[1] & ~BTNY[1]), .BTN_OK(RightButton));
+	Anti_jitter rotate(.clk(clk), .BTN(~BTNX[2] & ~BTNY[2]), .BTN_OK(RotateButton));
+	assign LED[0] = LeftButton;
+	assign LED[1] = RightButton;
+	assign LED[2] = RotateButton;*/
 
-	reg key_rdn;
+    reg key_rdn;
 	wire [7:0] keyboard_data;
 	wire keyboard_ready;
 	reg [1:0] rdn_state;
+	/*initial begin
+	   keyboard_ready = 0;
+	end
+	always @(posedge clk) begin
+		if(LeftButton) begin
+			keyboard_data = 8'h1c;
+			keyboard_ready = 1;
+		end
+		else if (RightButton) begin
+			keyboard_data = 8'h23;
+			keyboard_ready = 1;
+		end
+		else if (RotateButton)begin
+			keyboard_data = 8'h1d;
+			keyboard_ready = 1;
+		end
+		else begin
+			keyboard_ready = 0;
+		end
+	end*/
+	
 	 // 控制逻辑产生 rdn 信号
     always @(posedge clk or posedge rst) begin
         if (rst) begin
@@ -26,16 +61,16 @@ module top (
             case (rdn_state)
                 2'b00: begin
                     if (keyboard_ready) begin
-                        key_rdn <= 0;      // 数据准备好时，rdn 信号有效
+                        key_rdn <= 0;    
                         rdn_state <= 2'b01;
                     end
                 end
                 2'b01: begin
-                    key_rdn <= 1;          // 保持 rdn 信号无效
+                    key_rdn <= 1;          
                     rdn_state <= 2'b10;
                 end
                 2'b10: begin
-                    rdn_state <= 2'b00; // 准备进入下一次检测
+                    rdn_state <= 2'b00; 
                 end
                 default: begin
                     key_rdn <= 1;
