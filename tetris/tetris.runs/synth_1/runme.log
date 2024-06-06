@@ -24,9 +24,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 28752
+INFO: [Synth 8-7075] Helper process launched with PID 18928
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1431.109 ; gain = 440.637
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1430.566 ; gain = 439.398
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-9926] potential always loop found [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v:96]
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:1]
@@ -35,9 +35,9 @@ INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [C:/Users/csy/Desk
 INFO: [Synth 8-6157] synthesizing module 'PS2_Keyboard_Driver' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/PS2_Keyboard_Driver.v:25]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/PS2_Keyboard_Driver.v:55]
 INFO: [Synth 8-6155] done synthesizing module 'PS2_Keyboard_Driver' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/PS2_Keyboard_Driver.v:25]
-WARNING: [Synth 8-7071] port 'PS2C' of module 'PS2_Keyboard_Driver' is unconnected for instance 'pkd' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:18]
-WARNING: [Synth 8-7071] port 'PS2D' of module 'PS2_Keyboard_Driver' is unconnected for instance 'pkd' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:18]
-WARNING: [Synth 8-7023] instance 'pkd' of module 'PS2_Keyboard_Driver' has 7 connections declared, but only 5 given [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:18]
+WARNING: [Synth 8-7071] port 'PS2C' of module 'PS2_Keyboard_Driver' is unconnected for instance 'pkd' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:47]
+WARNING: [Synth 8-7071] port 'PS2D' of module 'PS2_Keyboard_Driver' is unconnected for instance 'pkd' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:47]
+WARNING: [Synth 8-7023] instance 'pkd' of module 'PS2_Keyboard_Driver' has 7 connections declared, but only 5 given [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:47]
 INFO: [Synth 8-6157] synthesizing module 'VGA' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/vga.v:67]
 INFO: [Synth 8-6155] done synthesizing module 'VGA' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/vga.v:67]
 INFO: [Synth 8-6157] synthesizing module 'game' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/game.v:23]
@@ -89,25 +89,12 @@ INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/csy/Desktop/Study/L
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v:68]
 WARNING: [Synth 8-85] always block has no event control specified [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v:67]
 INFO: [Synth 8-6155] done synthesizing module 'display' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v:1]
-INFO: [Synth 8-6157] synthesizing module 'DispNum' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/DispNum.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Mux4to1' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Mux4to1.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'Mux4to1' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Mux4to1.v:1]
-INFO: [Synth 8-6157] synthesizing module 'Mux4to1b4' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Mux4to1b4.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'Mux4to1b4' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Mux4to1b4.v:1]
-INFO: [Synth 8-6157] synthesizing module 'MyMC14495' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/MyMC14485.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'MyMC14495' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/MyMC14485.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Enabler' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Enabler.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'Enabler' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Enabler.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'DispNum' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/DispNum.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:1]
 WARNING: [Synth 8-6014] Unused sequential element isMovable_reg was removed.  [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:156]
 WARNING: [Synth 8-6014] Unused sequential element next_x_reg was removed.  [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:159]
 WARNING: [Synth 8-6014] Unused sequential element next_y_reg was removed.  [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:160]
-WARNING: [Synth 8-7129] Port D0 in module Enabler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D1 in module Enabler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D2 in module Enabler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D3 in module Enabler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rst in module DispNum is either unconnected or has no load
+WARNING: [Synth 8-3848] Net SEG in module/entity top does not have driver. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:8]
+WARNING: [Synth 8-3848] Net AN in module/entity top does not have driver. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:9]
 WARNING: [Synth 8-7129] Port clk in module display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rst in module display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port score[15] in module display is either unconnected or has no load
@@ -128,21 +115,33 @@ WARNING: [Synth 8-7129] Port score[1] in module display is either unconnected or
 WARNING: [Synth 8-7129] Port score[0] in module display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port keyboard_data in module tetris_logic is either unconnected or has no load
 WARNING: [Synth 8-7129] Port keyboard_ready in module tetris_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AN[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AN[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AN[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AN[0] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port PS2C in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port PS2D in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1548.367 ; gain = 557.895
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1549.012 ; gain = 557.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1548.367 ; gain = 557.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1549.012 ; gain = 557.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1548.367 ; gain = 557.895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1549.012 ; gain = 557.844
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1548.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1549.012 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -238,37 +237,62 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:79]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:79]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_CLK'. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_DO'. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_EN'. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_CLR'. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_CLK'. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_DO'. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_EN'. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_CLR'. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1656.535 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1599.602 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 系统找不到指定的路径。
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1656.535 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1599.602 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1656.535 ; gain = 666.062
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1599.602 ; gain = 608.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1656.535 ; gain = 666.062
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1599.602 ; gain = 608.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1656.535 ; gain = 666.062
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1599.602 ; gain = 608.434
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PS2_Keyboard_Driver'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'game'
+INFO: [Synth 8-802] inferred FSM for state register 'rdn_state_reg' in module 'top'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -285,8 +309,16 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'game'
 WARNING: [Synth 8-327] inferring latch for variable 'color_reg' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v:70]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rdn_state_reg' using encoding 'one-hot' in module 'top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1656.535 ; gain = 666.062
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1599.602 ; gain = 608.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -315,7 +347,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 3     
 	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 7     
+	                1 Bit    Registers := 8     
 +---Muxes : 
 	   8 Input  200 Bit        Muxes := 3     
 	   2 Input  200 Bit        Muxes := 2     
@@ -334,14 +366,14 @@ Detailed RTL Component Info :
 	   2 Input    5 Bit        Muxes := 1     
 	   8 Input    5 Bit        Muxes := 2     
 	   7 Input    5 Bit        Muxes := 16    
-	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 5     
 	   3 Input    3 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 1     
 	   2 Input    1 Bit        Muxes := 16    
 	   8 Input    1 Bit        Muxes := 11    
-	   3 Input    1 Bit        Muxes := 1     
 	   4 Input    1 Bit        Muxes := 1     
 	   5 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -358,160 +390,27 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port rst in module DispNum is either unconnected or has no load
-WARNING: [Synth 8-7129] Port EN[3] in module DispNum is either unconnected or has no load
-WARNING: [Synth 8-7129] Port EN[2] in module DispNum is either unconnected or has no load
-WARNING: [Synth 8-7129] Port EN[1] in module DispNum is either unconnected or has no load
-WARNING: [Synth 8-7129] Port EN[0] in module DispNum is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clk in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rst in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[15] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[14] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[13] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[12] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[11] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[10] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[9] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[8] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[7] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[6] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[5] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[4] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[3] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[2] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[1] in module display is either unconnected or has no load
-WARNING: [Synth 8-7129] Port score[0] in module display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port keyboard_data in module tetris_logic is either unconnected or has no load
 WARNING: [Synth 8-7129] Port keyboard_ready in module tetris_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SEG[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AN[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AN[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AN[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AN[0] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port PS2C in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port PS2D in module top is either unconnected or has no load
 WARNING: [Synth 8-3332] Sequential element (pkd/FSM_sequential_state_reg) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (game0/FSM_onehot_state_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rdn_state_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rdn_state_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rdn_state_reg[0]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1656.535 ; gain = 666.062
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 1599.602 ; gain = 608.434
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:27 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |   139|
-|3     |LUT1   |    40|
-|4     |LUT2   |   135|
-|5     |LUT3   |   284|
-|6     |LUT4   |   253|
-|7     |LUT5   |   349|
-|8     |LUT6   |  1069|
-|9     |MUXF7  |   168|
-|10    |MUXF8  |    49|
-|11    |FDCE   |    10|
-|12    |FDRE   |   344|
-|13    |LD     |     4|
-|14    |IBUF   |     2|
-|15    |OBUF   |    26|
-+------+-------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1656.535 ; gain = 666.062
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:29 . Memory (MB): peak = 1656.535 ; gain = 557.895
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1656.535 ; gain = 666.062
-INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1656.535 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 360 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'tetris_logic' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1656.535 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  LD => LDCE: 4 instances
-
-系统找不到指定的路径。
-Synth Design complete | Checksum: 94ffe130
-INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 138 Warnings, 30 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:34 . Memory (MB): peak = 1656.535 ; gain = 1086.391
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1656.535 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/top.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jun  6 15:09:26 2024...

@@ -72,7 +72,6 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 5
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k160tffg676-2L
 
@@ -88,11 +87,6 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/DispNum.v
-  C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Enabler.v
-  C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Mux4to1.v
-  C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Mux4to1b4.v
-  C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/MyMC14485.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/PS2_Keyboard_Driver.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/clk_div.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v

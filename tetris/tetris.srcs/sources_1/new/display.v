@@ -17,7 +17,7 @@ module display(
     parameter Start = 2'b00, Playing = 2'b01, Over = 2'b10;
     parameter   White = 12'b111111111111,
                 Black = 12'b000000000000,
-                Blue = 12'h00f,
+                Green = 12'h0f0,
                 Grey = 12'h777;
 
     integer shape[6:0][3:0][3:0];
@@ -77,11 +77,11 @@ module display(
                 else  begin
                     if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][0])
                             color = White;
-                    if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][1])
+                    else if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][1])
                             color = White;
-                    if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][2])
+                    else if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][2])
                             color = White;
-                    if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][3])
+                    else if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][3])
                             color = White;
                 end
             end
@@ -90,7 +90,7 @@ module display(
             end
         end
         Over: begin
-            color = Blue;
+            color = Green;
         end
         endcase
     end

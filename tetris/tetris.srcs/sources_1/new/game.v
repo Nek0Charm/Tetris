@@ -54,6 +54,9 @@ module game(
         state <= Playing;    
     end
     always @(posedge clk) begin
+        if(rst) begin
+            state <= Playing;        
+        end
         case (state)
             Start: begin
                 if(keyboard_ready && keyboard_data == 8'h29) begin

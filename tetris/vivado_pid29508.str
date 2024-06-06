@@ -163,3 +163,296 @@ selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sourc
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), dis : display (display.v)]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), game0 : game (game.v), gamestart : tetris_logic (tetris_logic.v)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), game0 : game (game.v), gamestart : tetris_logic (tetris_logic.v)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 232 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "dis_score"); // Q (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // m (dialog1)
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (dialog0)
+// Tcl Message: close [ open C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/dis_score.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/dis_score.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (OptionPane.button)
+dismissDialog("Define Module"); // p (dialog2)
+// Elapsed Time for: 'L.f': 04m:22s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04m:24s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("dis_score.v", 599, 330); // ad (dis_score.v)
+// [GUI Memory]: 180 MB (+6640kb) [00:04:45]
+selectCodeEditor("dis_score.v", 248, 471); // ad (dis_score.v)
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 04m:26s
+// Elapsed Time for: 'L.f': 04m:28s
+// Elapsed time: 13 seconds
+selectCodeEditor("dis_score.v", 161, 536); // ad (dis_score.v)
+typeControlKey((HResource) null, "dis_score.v", 'v'); // ad (dis_score.v)
+selectCodeEditor("dis_score.v", 272, 486); // ad (dis_score.v)
+selectCodeEditor("dis_score.v", 38, 499); // ad (dis_score.v)
+selectCodeEditor("dis_score.v", 19, 506); // ad (dis_score.v)
+selectCodeEditor("dis_score.v", 81, 312); // ad (dis_score.v)
+selectCodeEditor("dis_score.v", 81, 312, false, false, false, false, true); // ad (dis_score.v) - Double Click
+selectCodeEditor("dis_score.v", 289, 282); // ad (dis_score.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 05m:00s
+// Elapsed Time for: 'L.f': 05m:02s
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), b0 : xil_defaultlib.bintobcd]", 11, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 65 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "clock_div"); // Q (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // m (dialog4)
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (dialog3)
+// Tcl Message: close [ open C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/clock_div.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/clock_div.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (OptionPane.button)
+dismissDialog("Define Module"); // p (dialog5)
+// Elapsed Time for: 'L.f': 06m:27s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 06m:29s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 06m:31s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 06m:33s
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), display : DispNum (DispNum.v)]", 13, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), c0 : clock_div (clock_div.v)]", 10, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), c0 : clock_div (clock_div.v)]", 10, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("clock_div.v", 87, 528); // ad (clock_div.v)
+typeControlKey((HResource) null, "clock_div.v", 'v'); // ad (clock_div.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), b0 : xil_defaultlib.bintobcd]", 11, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "bintobcd"); // Q (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // m (dialog7)
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (dialog6)
+// Tcl Message: close [ open C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/bintobcd.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/bintobcd.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p (dialog8)
+// Elapsed Time for: 'L.f': 07m:23s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07m:25s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), b0 : bintobcd (bintobcd.v)]", 11, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("bintobcd.v", 139, 524); // ad (bintobcd.v)
+// Elapsed Time for: 'L.f': 07m:27s
+typeControlKey((HResource) null, "bintobcd.v", 'v'); // ad (bintobcd.v)
+// Elapsed Time for: 'L.f': 07m:29s
+selectCodeEditor("bintobcd.v", 495, 329); // ad (bintobcd.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_div.v", 6); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'L.f': 07m:33s
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("clock_div.v", 1017, 40); // ad (clock_div.v)
+// TclEventType: DG_GRAPH_STALE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bintobcd.v", 7); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 07m:35s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 07m:37s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_div.v", 6); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("clock_div.v", 850, 178); // ad (clock_div.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dis_score.v", 5); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), game0 : game (game.v)]", 5, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), game0 : game (game.v)]", 5, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 33 seconds
+selectCodeEditor("game.v", 798, 124); // ad (game.v)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "shift"); // Q (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "shiftreg64b"); // Q (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // m (dialog10)
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 15 seconds
+dismissDialog("Add Sources"); // c (dialog9)
+// Tcl Message: close [ open C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/shiftreg64b.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/shiftreg64b.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p (dialog11)
+// Elapsed Time for: 'L.f': 08m:37s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 08m:39s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, shiftreg64b (shiftreg64b.v)]", 13, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, shiftreg64b (shiftreg64b.v)]", 13, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("shiftreg64b.v", 86, 546); // ad (shiftreg64b.v)
+// Elapsed Time for: 'L.f': 08m:41s
+selectCodeEditor("shiftreg64b.v", 144, 515); // ad (shiftreg64b.v)
+selectCodeEditor("shiftreg64b.v", 244, 550); // ad (shiftreg64b.v)
+selectCodeEditor("shiftreg64b.v", 217, 495); // ad (shiftreg64b.v)
+// Elapsed Time for: 'L.f': 08m:43s
+typeControlKey((HResource) null, "shiftreg64b.v", 'v'); // ad (shiftreg64b.v)
+selectCodeEditor("shiftreg64b.v", 260, 427); // ad (shiftreg64b.v)
+// [GUI Memory]: 189 MB (+615kb) [00:09:29]
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+// Elapsed time: 14 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "My74LS161"); // Q (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // m (dialog13)
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 23 seconds
+dismissDialog("Add Sources"); // c (dialog12)
+// Tcl Message: close [ open C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/My74LS161.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/My74LS161.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes"); // JButton (OptionPane.button)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p (dialog14)
+// Elapsed Time for: 'L.f': 09m:37s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 09m:39s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 09m:41s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+selectCodeEditor("shiftreg64b.v", 1051, 30); // ad (shiftreg64b.v)
+// Elapsed Time for: 'L.f': 09m:43s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("shiftreg64b.v", 971, 71); // ad (shiftreg64b.v)
+// Elapsed Time for: 'L.f': 09m:45s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 09m:47s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 09m:49s
+// Elapsed Time for: 'L.f': 09m:51s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MyMC14495 (MyMC14485.v)]", 15, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, My74LS161 (My74LS161.v)]", 14, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, My74LS161 (My74LS161.v)]", 14, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("My74LS161.v", 195, 264); // ad (My74LS161.v)
+selectCodeEditor("My74LS161.v", 133, 516); // ad (My74LS161.v)
+selectCodeEditor("My74LS161.v", 130, 518, false, false, false, false, true); // ad (My74LS161.v) - Double Click
+selectCodeEditor("My74LS161.v", 253, 531); // ad (My74LS161.v)
+selectCodeEditor("My74LS161.v", 188, 531); // ad (My74LS161.v)
+typeControlKey((HResource) null, "My74LS161.v", 'v'); // ad (My74LS161.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), display : DispNum (DispNum.v)]", 13, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), display : DispNum (DispNum.v), Mux1 : Mux4to1 (Mux4to1.v)]", 14, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), display : DispNum (DispNum.v), mc14495 : MyMC14495 (shiftreg64b.v)]", 16, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MyMC14495 (MyMC14485.v)]", 19, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MyMC14495 (MyMC14485.v)]", 19, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), display : DispNum (DispNum.v), mc14495 : MyMC14495 (shiftreg64b.v)]", 16, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), display : DispNum (DispNum.v), mc14495 : MyMC14495 (shiftreg64b.v)]", 16, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MyMC14495 (MyMC14485.v)]", 19, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MyMC14495 (MyMC14485.v)]", 19, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("MyMC14485.v", 174, 535); // ad (MyMC14485.v)
+selectCodeEditor("MyMC14485.v", 109, 560); // ad (MyMC14485.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MyMC14495 (MyMC14485.v)]", 19, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // f (PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // X (dialog15)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/MyMC14485.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/MyMC14485.v 
+// Tcl Message: file delete -force C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/MyMC14485.v 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// Elapsed Time for: 'L.f': 10m:27s
+// Elapsed Time for: 'L.f': 10m:29s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, My74LS161 (My74LS161.v)]", 10, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// [Engine Memory]: 1,314 MB (+654kb) [00:10:51]
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SEG_DRV (shiftreg64b.v)]", 8, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SEG_DRV (shiftreg64b.v), MyMC6 : MyMCnew (shiftreg64b.v)]", 14, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SEG_DRV (shiftreg64b.v)]", 8, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SEG_DRV (shiftreg64b.v)]", 8, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, My74LS161 (My74LS161.v)]", 10, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, My74LS161 (My74LS161.v)]", 10, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v), b0 : bintobcd (bintobcd.v)]", 11, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dis_score (dis_score.v)]", 9, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "My74LS161.v", 9); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 11m:05s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No such file or directory 
+// Elapsed Time for: 'L.f': 11m:07s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, My74LS161 (My74LS161.v)]", 10, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, My74LS161 (My74LS161.v)]", 10, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "My74LS161.v", 9); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DispNum.v", 8); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DispNum.v", 7); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DispNum.v", 6); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DispNum.v", 6); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,318 MB. GUI used memory: 93 MB. Current time: 6/6/24, 3:36:45 PM GMT+08:00
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dis_score.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dis_score.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dis_score.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)

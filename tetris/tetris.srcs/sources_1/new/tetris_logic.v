@@ -55,9 +55,9 @@ module tetris_logic(
     reg [4:0] complete_rows;//a
     reg [4:0] complete_num;//a
     wire [1:0] act;
-    assign act = (keyboard_data == 8'h1c) ? LEFT 
-                :(keyboard_data == 8'h23) ? RIGHT
-                :(keyboard_data == 8'h1d) ? ROTATE
+    assign act = (keyboard_data == 8'h1c && keyboard_ready) ? LEFT 
+                :(keyboard_data == 8'h23 && keyboard_ready) ? RIGHT
+                :(keyboard_data == 8'h1d && keyboard_ready) ? ROTATE
                 :FALL;
     assign over_sig = over_sig_r;
     integer i,j,m,k,flag;
