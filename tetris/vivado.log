@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Wed Jun  5 20:28:30 2024
-# Process ID: 6016
+# Start of session at: Thu Jun  6 15:25:12 2024
+# Process ID: 29508
 # Current directory: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25508 C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris\tetris.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27488 C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris\tetris.xpr
 # Log file: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/vivado.log
 # Journal file: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris\vivado.jou
 # Running On: LAPTOP-LCA5B7K9, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 14710 MB
@@ -29,4 +29,5 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.871 ; gain = 337.238
+open_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1616.230 ; gain = 339.500
+update_compile_order -fileset sources_1

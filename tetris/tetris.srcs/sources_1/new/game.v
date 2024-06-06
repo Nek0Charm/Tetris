@@ -36,7 +36,7 @@ module game(
     parameter Start = 2'b00, Playing = 2'b01, Over = 2'b10;
 
     wire start_sig,over_sig;
-    assign start_sig = ~state[0] & state[1];
+    assign start_sig = state[0] & ~state[1];
 
     tetris_logic gamestart( .clk(clk), 
                             .rst(rst), 

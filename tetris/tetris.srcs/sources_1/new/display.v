@@ -1,8 +1,6 @@
 module display(
     input clk,
     input rst,
-    input [7:0] keyboard_data,
-    input   keyboard_ready,
     input  [4:0]square_x,
     input  [4:0]square_y,
     input  [2:0]square_type,
@@ -17,6 +15,10 @@ module display(
 
     integer i,j,k;
     parameter Start = 2'b00, Playing = 2'b01, Over = 2'b10;
+    parameter   White = 12'b111111111111,
+                Black = 12'b000000000000,
+                Blue = 12'h00f,
+                Grey = 12'h777;
 
     integer shape[6:0][3:0][3:0];
     initial begin
@@ -62,23 +64,33 @@ module display(
         shape[6][2][0] = 0; shape[6][2][1] = 1; shape[6][2][2] = 10; shape[6][2][3] = 11;
         shape[6][3][0] = 0; shape[6][3][1] = 1; shape[6][3][2] = 10; shape[6][3][3] = 11;
     end
-    always @(posedge clk) begin
+    always begin
         case(state) 
+        Start: begin
+            color = White;
+        end
         Playing:begin
-        if(row < 200  && col < 100) begin
-            if(map[row/10 * 10 + col / 10] == 1) begin
-                color = 12'b111111111111;
-            end
-            else  begin
-                for(i = 0; i < 4; i = i+1) begin
-                    if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][i])
-                        color = 12'b111111111111;
+            if(row < 200  && col < 100) begin
+                if(map[row/10 * 10 + col / 10] == 1) begin
+                    color = Grey;
+                end
+                else  begin
+                    if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][0])
+                            color = White;
+                    if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][1])
+                            color = White;
+                    if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][2])
+                            color = White;
+                    if(row/10 * 10 + col / 10 == square_y*10+square_x+shape[square_type][square_degree][3])
+                            color = White;
                 end
             end
+            else begin
+                color = Black;        
+            end
         end
-        else begin
-            color = 12'b000000000000;        
-        end
+        Over: begin
+            color = Blue;
         end
         endcase
     end

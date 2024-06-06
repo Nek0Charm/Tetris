@@ -23,7 +23,7 @@
 //这是从qq群的视频里抄的
 
 module PS2_Keyboard_Driver(
-    input clk,              //FPGA的时钟信号，100MHz
+    input clk,              //FPGA的时钟信号，50MHz
     input rst,                  
     input rdn,              //低电平有效
     input PS2C,             //键盘的时钟信号
