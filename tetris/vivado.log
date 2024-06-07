@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Jun  6 18:41:22 2024
-# Process ID: 29268
+# Start of session at: Fri Jun  7 13:41:19 2024
+# Process ID: 14760
 # Current directory: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25472 C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris\tetris.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25700 C:\Users\csy\Desktop\Study\Logic2024\tetris\tetris\tetris.xpr
 # Log file: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/vivado.log
 # Journal file: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris\vivado.jou
 # Running On: LAPTOP-LCA5B7K9, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 14710 MB
@@ -29,18 +29,5 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1612.098 ; gain = 346.980
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1613.023 ; gain = 417.234
 update_compile_order -fileset sources_1
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/top.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 10
-[Thu Jun  6 18:42:05 2024] Launched synth_1...
-Run output will be captured here: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/runme.log
-[Thu Jun  6 18:42:05 2024] Launched impl_1...
-Run output will be captured here: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 10
-[Thu Jun  6 18:43:10 2024] Launched synth_1...
-Run output will be captured here: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/runme.log
-[Thu Jun  6 18:43:10 2024] Launched impl_1...
-Run output will be captured here: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/runme.log

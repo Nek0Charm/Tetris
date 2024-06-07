@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date                      : Thu Jun  6 18:44:38 2024
+| Date                      : Thu Jun  6 18:54:36 2024
 | Host                      : LAPTOP-LCA5B7K9 running 64-bit major release  (build 9200)
 | Command                   : report_io -file top_io_placed.rpt
 | Design                    : top
@@ -681,7 +681,7 @@ Table of Contents
 | W20        | SEG[4]      | High Range       | IO_L15P_T2_DQS_12            | TRISTATE      | LVCMOS33    |      12 |         12 | SLOW |                     |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | W21        |             | High Range       | IO_L6N_T0_VREF_12            | User IO       |             |      12 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | W22        |             |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
-| W23        | LED[0]      | High Range       | IO_L8P_T1_12                 | TRISTATE      | LVCMOS33    |      12 |         12 | SLOW |                     |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| W23        | LED[0]      | High Range       | IO_L8P_T1_12                 | OUTPUT        | LVCMOS33    |      12 |         12 | SLOW |                     |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | W24        |             | High Range       | IO_L8N_T1_12                 | User IO       |             |      12 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | W25        |             | High Range       | IO_L5P_T0_12                 | User IO       |             |      12 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | W26        |             | High Range       | IO_L5N_T0_12                 | User IO       |             |      12 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |

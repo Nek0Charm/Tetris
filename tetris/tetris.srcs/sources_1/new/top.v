@@ -1,5 +1,5 @@
 module top (
-	input clk,					//FPGA板上的时钟信�????
+	input clk,					//FPGA板上的时钟信�????
     input rst,					//重置信号
 	input PS2C,					//键盘脉冲信号
 	input PS2D,					//键盘数据信号
@@ -8,9 +8,9 @@ module top (
 	//input [14:0] SW,
     output [3:0] R, G, B,		//VGA
     output HS, VS,
-	output [7:0] SEG,			//七段数码�????
+	output [7:0] SEG,			//七段数码�????
     output [3:0] AN,
-	output [7:0] LED
+	output reg [7:0] LED
 );
 
     wire clk25MHZ;
@@ -31,6 +31,9 @@ module top (
 	wire [7:0] keyboard_data;
 	wire keyboard_ready;
 	reg [1:0] rdn_state;
+	always @(posedge keyboard_ready) begin
+		LED[0] <= 1;
+	end
 	/*initial begin
 	   keyboard_ready = 0;
 	end
