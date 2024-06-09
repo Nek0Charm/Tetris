@@ -37,7 +37,10 @@ module game(
 
     wire start_sig,over_sig;
     assign start_sig = state[0] & ~state[1];
-
+    reg [1:0] Fall_ready;
+    always @(posedge clk) begin
+        Fall_ready = {Fall_ready[0], keyboard_ready};
+    end
     tetris_logic gamestart( .clk(clk), 
                             .rst(rst), 
                             .keyboard_data(keyboard_data), 
@@ -51,7 +54,8 @@ module game(
                             .score(score),
                             .map(map));
     initial begin
-        state <= Playing;    
+        Fall_ready = 2'b00;
+        state = Playing;    
     end
     always @(posedge clk) begin
         if(rst) begin
@@ -59,7 +63,7 @@ module game(
         end
         case (state)
             Start: begin
-                if(keyboard_ready && keyboard_data == 8'h29) begin
+                if(Fall_ready == 2'b10 && (keyboard_data == 8'h1c)) begin
                     state <= Playing;
                 end
                 else begin
@@ -75,7 +79,7 @@ module game(
                 end
             end
             Over: begin
-                if(keyboard_ready && keyboard_data == 8'h29) begin
+                if(Fall_ready == 2'b10 && (keyboard_data == 8'h29)) begin
                     state <= Start;
                 end
                 else begin

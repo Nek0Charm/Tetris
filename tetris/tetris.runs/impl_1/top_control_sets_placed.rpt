@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Jun  6 18:54:36 2024
+| Date         : Sun Jun  9 15:02:59 2024
 | Host         : LAPTOP-LCA5B7K9 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    13 |
-|    Minimum number of control sets                        |    13 |
+| Total control sets                                       |    17 |
+|    Minimum number of control sets                        |    17 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    57 |
+| Unused register locations in slices containing registers |    61 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    13 |
+| Total control sets |    17 |
 | >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     3 |
-| >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     0 |
-| >= 10 to < 12      |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     3 |
 | >= 12 to < 14      |     2 |
-| >= 14 to < 16      |     1 |
-| >= 16              |     4 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              41 |           14 |
+| No           | No                    | No                     |              65 |           35 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             226 |           99 |
-| Yes          | No                    | No                     |              22 |            9 |
-| Yes          | No                    | Yes                    |              10 |            3 |
-| Yes          | Yes                   | No                     |              52 |           14 |
+| No           | Yes                   | No                     |             248 |          138 |
+| Yes          | No                    | No                     |              30 |           14 |
+| Yes          | No                    | Yes                    |              10 |            4 |
+| Yes          | Yes                   | No                     |              74 |           18 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,18 +74,22 @@ Table of Contents
 |  Clock Signal  |            Enable Signal            |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+-------------------------------------+----------------------------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG | game0/gamestart/count_time          |                                        |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | game0/gamestart/square_y[4]_i_1_n_0 |                                        |                1 |              4 |         4.00 |
-|  game0/E[0]    |                                     |                                        |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | game0/gamestart/i                   |                                        |                2 |              5 |         2.50 |
-|  clk25MHZ_BUFG |                                     | vga0/h_count[9]_i_1_n_0                |                3 |             10 |         3.33 |
-|  clk25MHZ_BUFG | vga0/v_count                        | rst_IBUF                               |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG | game0/gamestart/square_x[2]_i_1_n_0 |                                        |                5 |             12 |         2.40 |
-|  clk25MHZ_BUFG |                                     | vga0/rdn                               |                4 |             12 |         3.00 |
-|  clk_IBUF_BUFG |                                     |                                        |                6 |             15 |         2.50 |
-|  clk25MHZ_BUFG |                                     |                                        |                7 |             22 |         3.14 |
-|  clk_IBUF_BUFG | game0/gamestart/count_time          | game0/gamestart/count_time[25]_i_1_n_0 |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG | game0/gamestart/square_y[0]_i_1_n_0 |                                        |                1 |              4 |         4.00 |
+|  game0/E[0]    |                                     |                                        |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | game0/gamestart/i                   |                                        |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG | game0/gamestart/square_y[0]_i_1_n_0 | game0/gamestart/square_y[4]_i_1_n_0    |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG | pkd/data[7]_i_1_n_0                 |                                        |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | pkd/PS2_shift_0                     | rst_IBUF                               |                2 |             10 |         5.00 |
+|  clk25MHZ_BUFG |                                     | vga0/h_count[9]_i_1_n_0                |                4 |             10 |         2.50 |
+|  clk25MHZ_BUFG | vga0/v_count                        | rst_IBUF                               |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG | game0/gamestart/E[0]                |                                        |                6 |             12 |         2.00 |
+|  clk25MHZ_BUFG |                                     | vga0/rdn                               |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG |                                     | rst_IBUF                               |                6 |             22 |         3.67 |
+|  clk25MHZ_BUFG |                                     |                                        |               11 |             22 |         2.00 |
 |  clk_IBUF_BUFG | game0/gamestart/i                   | game0/gamestart/i[31]_i_1_n_0          |                7 |             27 |         3.86 |
-|  clk_IBUF_BUFG |                                     | game0/gamestart/map1__0                |               92 |            204 |         2.22 |
+|  clk_IBUF_BUFG | game0/gamestart/count_time          | game0/gamestart/count_time[31]_i_1_n_0 |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG |                                     |                                        |               22 |             39 |         1.77 |
+|  clk_IBUF_BUFG |                                     | game0/gamestart/map1__0                |              123 |            204 |         1.66 |
 +----------------+-------------------------------------+----------------------------------------+------------------+----------------+--------------+
 
 

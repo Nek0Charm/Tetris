@@ -36,6 +36,9 @@ module PS2_Keyboard_Driver(
     reg [9:0] PS2_shift = 10'b1000000000;
     reg [1:0] state = Idle;
     reg [1:0] Fall_Clk;
+    initial begin
+        ready <= 0;
+    end
 
     always @(posedge clk) begin
         Fall_Clk <= {Fall_Clk[0], PS2C};
@@ -62,6 +65,10 @@ module PS2_Keyboard_Driver(
                 end
                 Rece: begin
                     if(Fall_Clk == 2'b10)begin
+                        if(PS2_shift[8:1] == 8'hf0) begin
+                            ready <= 0;
+                            state <= Idle;
+                        end
                         if(PS2_shift[0] && PS2D) begin
                             ready <= {^PS2_shift[9:1]};
                             data <= PS2_shift[8:1];

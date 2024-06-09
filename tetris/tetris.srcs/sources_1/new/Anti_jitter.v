@@ -32,8 +32,8 @@ module Anti_jitter(
     end
     always @(posedge clk)begin
         count <= {count[6:0],BTN};
-        if(count==8'b11111111)  BTN_OK <= 1'b0;
-        else    BTN_OK <= 1'b1;
+        if(count==8'b11111111)  BTN_OK <= 1'b1;
+        else    BTN_OK <= 1'b0;
     end
        
 endmodule
