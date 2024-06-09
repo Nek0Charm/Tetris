@@ -44,6 +44,8 @@ module tetris_logic(
                 CHECK_IF_OVER = 3'b110,
                 UPDATE_MAP = 3'b111;
     parameter FALL = 2'b00, LEFT = 2'b01, RIGHT = 2'b10, ROTATE = 2'b11;  
+    parameter EASY = 75000000, NORMAL = 50000000, DIFFICULT = 25000000;
+    integer difficulty;
     reg isMovable;
     reg over_sig_r;
     reg isOver;
@@ -109,6 +111,7 @@ module tetris_logic(
         rand_num = 0;
         Fall_ready = 2'b00;    
         square_degree = 0;
+        difficulty = EASY;
     end
     
     
@@ -119,6 +122,7 @@ module tetris_logic(
             score <= 0;
             isOver <= 0;
             state <= INIT;
+            difficulty <= EASY;
         end
         else begin
             case (state)
@@ -171,7 +175,7 @@ module tetris_logic(
                         act <= FALL;
                         state <= CHECK_IF_MOVABLE;
                     end
-                    else if(count_time < 50000000) begin
+                    else if(count_time < difficulty) begin
                         state <= state;
                     end
                     else begin
@@ -275,7 +279,13 @@ module tetris_logic(
                         if(&map[j*10+:10]) begin
                             complete_rows = j;
                             flag = 1;
-                            score = score << 1;
+                            score = score + 1;
+                            if(score == 5) begin
+                                difficulty <= NORMAL;
+                            end
+                            else if (score == 10) begin
+                                difficulty <= DIFFICULT;
+                            end 
                         end 
                     end
                     
@@ -295,7 +305,7 @@ module tetris_logic(
                     else begin
                         map[0+:10] = 10'b0;
                         state <= CHECK_COMPLETE_ROW;
-                    end
+                    end            
                 end
                 CHECK_IF_OVER:begin
                     isOver <= 0;

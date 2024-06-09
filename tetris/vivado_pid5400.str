@@ -150,3 +150,56 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.gen/sources_1'. 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2023.2/data/ip'. 
+// [Engine Memory]: 1,247 MB (+15335kb) [00:00:23]
+// Tcl Message: open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1592.586 ; gain = 398.223 
+// Project name: tetris; location: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris; part: xc7k160tffg676-2L
+dismissDialog("Open Project"); // bq (Open Project Progress)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// [GUI Memory]: 162 MB (+7562kb) [00:01:05]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/top.dcp 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Resetting Runs"); // bq (Resetting Runs Progress)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Sun Jun  9 15:00:52 2024] Launched synth_1... Run output will be captured here: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/runme.log [Sun Jun  9 15:00:52 2024] Launched impl_1... Run output will be captured here: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:52s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 03m:54s
+// Elapsed Time for: 'L.f': 03m:56s
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04m:18s
+// Elapsed Time for: 'L.f': 04m:20s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04m:36s
+// Elapsed Time for: 'L.f': 04m:38s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 05m:36s
+// Elapsed Time for: 'L.f': 05m:38s

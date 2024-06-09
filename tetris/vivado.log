@@ -30,3 +30,11 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2023.2/data/ip'.
 open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1592.586 ; gain = 398.223
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sun Jun  9 15:00:52 2024] Launched synth_1...
+Run output will be captured here: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/runme.log
+[Sun Jun  9 15:00:52 2024] Launched impl_1...
+Run output will be captured here: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/runme.log

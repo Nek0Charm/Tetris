@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Sun Jun  9 15:04:04 2024
+| Date             : Sun Jun  9 15:30:36 2024
 | Host             : LAPTOP-LCA5B7K9 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.242        |
+| Total On-Chip Power (W)  | 0.250        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.126        |
+| Dynamic (W)              | 0.135        |
 | Device Static (W)        | 0.115        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 99.5         |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.006 |        3 |       --- |             --- |
-| Slice Logic    |     0.055 |     9307 |       --- |             --- |
-|   LUT as Logic |     0.050 |     6290 |    101400 |            6.20 |
-|   CARRY4       |     0.005 |     1054 |     25350 |            4.16 |
-|   Register     |    <0.001 |      428 |    202800 |            0.21 |
+| Clocks         |     0.005 |        3 |       --- |             --- |
+| Slice Logic    |     0.059 |     9550 |       --- |             --- |
+|   LUT as Logic |     0.054 |     6388 |    101400 |            6.30 |
+|   CARRY4       |     0.006 |     1138 |     25350 |            4.49 |
+|   Register     |    <0.001 |      451 |    202800 |            0.22 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |      303 |    101400 |            0.30 |
+|   F7/F8 Muxes  |    <0.001 |      284 |    101400 |            0.28 |
 |   Others       |     0.000 |       16 |       --- |             --- |
-| Signals        |     0.062 |     7181 |       --- |             --- |
+| Signals        |     0.067 |     7854 |       --- |             --- |
 | I/O            |     0.003 |       38 |       400 |            9.50 |
 | Static Power   |     0.115 |          |           |                 |
-| Total          |     0.242 |          |           |                 |
+| Total          |     0.250 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.164 |       0.123 |      0.041 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.173 |       0.132 |      0.041 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -143,10 +143,10 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| top           |     0.126 |
-|   game0       |     0.106 |
-|     gamestart |     0.106 |
-|   vga0        |     0.016 |
+| top           |     0.135 |
+|   game0       |     0.112 |
+|     gamestart |     0.112 |
+|   vga0        |     0.019 |
 +---------------+-----------+
 
 
