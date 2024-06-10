@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Mon Jun 10 16:52:17 2024
+| Date         : Mon Jun 10 18:09:36 2024
 | Host         : LAPTOP-LCA5B7K9 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,15 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 746
+             Violations found: 748
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
-| TIMING-14 | Critical Warning | LUT on the clock tree          | 1          |
+| TIMING-14 | Critical Warning | LUT on the clock tree          | 2          |
 | TIMING-17 | Critical Warning | Non-clocked sequential cell    | 663        |
 | LUTAR-1   | Warning          | LUT drives async reset alert   | 7          |
 | TIMING-16 | Warning          | Large setup violation          | 56         |
-| TIMING-18 | Warning          | Missing input or output delay  | 17         |
+| TIMING-18 | Warning          | Missing input or output delay  | 18         |
 | TIMING-20 | Warning          | Non-clocked latch              | 1          |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
@@ -40,7 +40,12 @@ Table of Contents
 -----------------
 TIMING-14#1 Critical Warning
 LUT on the clock tree  
-The LUT game0/gamestart/n_0_7066_BUFG_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+The LUT game0/gamestart/clk0_BUFG_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#2 Critical Warning
+LUT on the clock tree  
+The LUT game0/n_0_8210_BUFG_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
 Related violations: <none>
 
 TIMING-17#1 Critical Warning
@@ -3396,287 +3401,287 @@ Related violations: <none>
 
 LUTAR-1#7 Warning
 LUT drives async reset alert  
-LUT cell timer/seg1/s2/shift1/FD4/Q_reg_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) timer/seg1/SR1/Q_reg_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell timer/seg1/s2/shift4/FD6/Q_reg_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) timer/seg1/SR1/Q_reg_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -2.116 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[0]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.330 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[0]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -2.312 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/state_reg[0]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.556 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_x_reg[1]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -2.373 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/act_reg[0]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.558 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_x_reg[2]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -2.373 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/act_reg[1]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.561 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_x_reg[0]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -2.373 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_x_reg[1]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.561 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_y_reg[0]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -2.373 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_x_reg[2]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.589 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/state_reg[0]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -2.373 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_x_reg[3]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.686 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_y_reg[4]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -2.373 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_x_reg[4]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.903 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_x_reg[3]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -2.467 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_y_reg[2]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.903 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_x_reg[4]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -2.467 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_y_reg[4]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.903 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_y_reg[1]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -2.489 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_x_reg[0]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.001 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_x_reg[1]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -2.489 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_y_reg[1]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.001 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_y_reg[0]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -2.562 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[1]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.001 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_y_reg[1]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -2.562 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[2]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.001 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_y_reg[2]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -2.562 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[3]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.001 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_y_reg[3]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -2.562 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[5]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.019 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/isMovable_reg/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -2.562 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[6]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.063 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_y_reg[2]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -2.562 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[7]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.063 ns between game0/gamestart/next_x_reg[0]/C (clocked by clk) and game0/gamestart/square_y_reg[3]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -2.562 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[8]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.068 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/act_reg[0]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -2.580 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[29]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.068 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/act_reg[1]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -2.580 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[30]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.068 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_x_reg[0]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -2.580 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[31]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.068 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_x_reg[2]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -2.586 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_y_reg[0]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.068 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_x_reg[3]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -2.586 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/next_y_reg[3]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.087 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_x_reg[4]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -2.603 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[17]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.102 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[17]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
-There is a large setup violation of -2.603 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[18]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.102 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[18]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
-There is a large setup violation of -2.603 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[19]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.102 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[19]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
-There is a large setup violation of -2.603 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[20]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.102 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[1]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#29 Warning
 Large setup violation  
-There is a large setup violation of -2.603 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[25]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.102 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[20]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#30 Warning
 Large setup violation  
-There is a large setup violation of -2.603 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[26]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.102 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[2]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#31 Warning
 Large setup violation  
-There is a large setup violation of -2.603 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[27]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.102 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[3]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#32 Warning
 Large setup violation  
-There is a large setup violation of -2.603 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[4]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.102 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[4]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#33 Warning
 Large setup violation  
-There is a large setup violation of -2.659 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[10]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.125 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[29]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#34 Warning
 Large setup violation  
-There is a large setup violation of -2.659 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[11]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.125 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[30]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#35 Warning
 Large setup violation  
-There is a large setup violation of -2.659 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[12]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.125 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[31]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#36 Warning
 Large setup violation  
-There is a large setup violation of -2.659 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[28]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.125 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[5]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#37 Warning
 Large setup violation  
-There is a large setup violation of -2.682 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[21]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.125 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[6]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#38 Warning
 Large setup violation  
-There is a large setup violation of -2.682 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[22]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.125 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[7]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#39 Warning
 Large setup violation  
-There is a large setup violation of -2.682 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[23]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.154 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/next_y_reg[4]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#40 Warning
 Large setup violation  
-There is a large setup violation of -2.682 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[24]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.177 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[13]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#41 Warning
 Large setup violation  
-There is a large setup violation of -2.682 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[9]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.177 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[14]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#42 Warning
 Large setup violation  
-There is a large setup violation of -2.688 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[13]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.177 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[15]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#43 Warning
 Large setup violation  
-There is a large setup violation of -2.688 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[14]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.177 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[16]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#44 Warning
 Large setup violation  
-There is a large setup violation of -2.688 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[15]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.177 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[25]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#45 Warning
 Large setup violation  
-There is a large setup violation of -2.688 ns between game0/gamestart/score_reg[1]_replica/C (clocked by clk) and game0/gamestart/count_time_reg[16]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.177 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[26]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#46 Warning
 Large setup violation  
-There is a large setup violation of -2.785 ns between game0/gamestart/square_y_reg[3]/C (clocked by clk) and game0/gamestart/square_x_reg[1]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.177 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[27]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#47 Warning
 Large setup violation  
-There is a large setup violation of -2.788 ns between game0/gamestart/square_y_reg[3]/C (clocked by clk) and game0/gamestart/square_x_reg[2]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.187 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[21]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#48 Warning
 Large setup violation  
-There is a large setup violation of -2.830 ns between game0/gamestart/square_y_reg[3]/C (clocked by clk) and game0/gamestart/square_y_reg[0]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.187 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[22]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#49 Warning
 Large setup violation  
-There is a large setup violation of -2.837 ns between game0/gamestart/square_y_reg[3]/C (clocked by clk) and game0/gamestart/isMovable_reg/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.187 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[23]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#50 Warning
 Large setup violation  
-There is a large setup violation of -2.857 ns between game0/gamestart/square_y_reg[3]/C (clocked by clk) and game0/gamestart/square_x_reg[0]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.187 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[24]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#51 Warning
 Large setup violation  
-There is a large setup violation of -2.938 ns between game0/gamestart/next_y_reg[1]/C (clocked by clk) and game0/gamestart/square_y_reg[1]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.210 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[10]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#52 Warning
 Large setup violation  
-There is a large setup violation of -2.938 ns between game0/gamestart/next_y_reg[1]/C (clocked by clk) and game0/gamestart/square_y_reg[3]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.210 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[11]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#53 Warning
 Large setup violation  
-There is a large setup violation of -2.943 ns between game0/gamestart/square_y_reg[3]/C (clocked by clk) and game0/gamestart/square_x_reg[3]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.210 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[12]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#54 Warning
 Large setup violation  
-There is a large setup violation of -2.943 ns between game0/gamestart/square_y_reg[3]/C (clocked by clk) and game0/gamestart/square_y_reg[4]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.210 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[28]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#55 Warning
 Large setup violation  
-There is a large setup violation of -2.946 ns between game0/gamestart/square_y_reg[3]/C (clocked by clk) and game0/gamestart/square_x_reg[4]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.210 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[8]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#56 Warning
 Large setup violation  
-There is a large setup violation of -2.959 ns between game0/gamestart/square_y_reg[3]/C (clocked by clk) and game0/gamestart/square_y_reg[2]/CE (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.210 ns between game0/gamestart/score_reg[0]_replica_2/C (clocked by clk) and game0/gamestart/count_time_reg[9]/R (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning
@@ -3762,6 +3767,11 @@ Related violations: <none>
 TIMING-18#17 Warning
 Missing input or output delay  
 An output delay is missing on SEG_EN relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on buzzer relative to the rising and/or falling clock edge(s) of clk.
 Related violations: <none>
 
 TIMING-20#1 Warning

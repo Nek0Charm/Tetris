@@ -33,11 +33,12 @@ module game(
     output [15:0] score,
     output reg [1:0] state,
     output pause,
-    output reset
+    output reset,
+    output start_sig
     );
     parameter Start = 2'b00, Playing = 2'b01, Over = 2'b10;
 
-    wire start_sig,over_sig;
+    wire over_sig;
     assign start_sig = state[0] & ~state[1];
     reg [1:0] Fall_ready;
     always @(posedge clk) begin
@@ -63,7 +64,7 @@ module game(
     end
     always @(posedge clk) begin
         if(rst) begin
-            state <= Playing;        
+            state <= Start;        
         end
         case (state)
             Start: begin

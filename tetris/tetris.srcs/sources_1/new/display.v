@@ -102,7 +102,7 @@ module display(
                  col == firstnet_h + netdistance * 3 || col == firstnet_h + netdistance * 4 || col == firstnet_h + netdistance * 5 || 
                  col == firstnet_h + netdistance * 6 || col == firstnet_h + netdistance * 7 || col == firstnet_h + netdistance * 8 ||
                  row == firstnet_v || row == firstnet_v + netdistance || row == firstnet_v + netdistance * 2 || 
-                 row == firstnet_v + netdistance * 3 || row == firstnet_v + netdistance * 4 ||  
+                 row == firstnet_v + netdistance * 3 || row == firstnet_v + netdistance * 5 ||  
                  row == firstnet_v + netdistance * 6 || row == firstnet_v + netdistance * 7 || row == firstnet_v + netdistance * 8 ||
                  row == firstnet_v + netdistance * 9 || row == firstnet_v + netdistance * 10 || row == firstnet_v + netdistance * 11 || 
                  row == firstnet_v + netdistance * 12 || row == firstnet_v + netdistance * 13 || row == firstnet_v + netdistance * 14 ||
@@ -111,7 +111,7 @@ module display(
                  (row >= v_start && row < v_start + 2 * border_width + game_area_height)
                 ) //net 
                 color <= 12'h000; 
-            else if(row == firstnet_v + netdistance * 5 && (col >= h_start + border_width && col < h_start + border_width + game_area_width ) &&
+            else if(row == firstnet_v + netdistance * 4 && (col >= h_start + border_width && col < h_start + border_width + game_area_width ) &&
                  (row >= v_start && row < v_start + 2 * border_width + game_area_height))
                 color <= Red;       
               

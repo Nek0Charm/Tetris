@@ -88,9 +88,9 @@ set_property ip_output_repo c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/t
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/over.coe
-add_files c:/Users/csy/Desktop/Study/Logic2024/tetris/start.coe
-add_files c:/Users/csy/Desktop/Study/Logic2024/tetris/play.coe
+add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/coe/over.coe
+add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/coe/start.coe
+add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/coe/play.coe
 read_verilog -library xil_defaultlib {
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/DispNum.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Enabler.v
@@ -106,17 +106,18 @@ read_verilog -library xil_defaultlib {
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/game.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/shiftreg64b.v
+  C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/song.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/vga.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v
 }
-read_ip -quiet c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_start/blk_mem_gen_start.xci
+read_ip -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_start/blk_mem_gen_start.xci
 set_property used_in_implementation false [get_files -all c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.gen/sources_1/ip/blk_mem_gen_start/blk_mem_gen_start_ooc.xdc]
 
 read_ip -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_over/blk_mem_gen_over.xci
 set_property used_in_implementation false [get_files -all c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.gen/sources_1/ip/blk_mem_gen_over/blk_mem_gen_over_ooc.xdc]
 
-read_ip -quiet c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_play/blk_mem_gen_play.xci
+read_ip -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_play/blk_mem_gen_play.xci
 set_property used_in_implementation false [get_files -all c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.gen/sources_1/ip/blk_mem_gen_play/blk_mem_gen_play_ooc.xdc]
 
 OPTRACE "Adding files" END { }

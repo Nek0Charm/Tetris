@@ -1,20 +1,21 @@
 module top (
-	input clk,					//FPGA板上的时钟信�??????
+	input clk,					//FPGA板上的时钟信�???????
     input rst,					//重置信号
 	input PS2C,					//键盘脉冲信号
 	input PS2D,					//键盘数据信号
 	//input [3:0] BTNX,
 	//input [3:0] BTNY,
-	//input [14:0] SW,
+	input [14:0] SW,
     output [3:0] R, G, B,		//VGA
     output HS, VS,
-	output [7:0] SEG,			//七段数码�??????
+	output [7:0] SEG,			//七段数码�???????
     output [3:0] AN,
 	output reg [7:0] LED,
 	output SEG_CLK,
 	output SEG_CLR,
 	output SEG_DO,
-	output SEG_EN
+	output SEG_EN,
+	output buzzer
 );
 
     wire clk25MHZ;
@@ -54,7 +55,9 @@ module top (
 	wire [9:0] col;
 	wire rdn;
 	wire [11:0] pixel;
+	wire start_sig;
 	VGA vga0(.clk(clk25MHZ), .rst(rst), .R(R), .G(G), .B(B), .HS(HS), .VS(VS), .row(row), .col(col), .rdn(rdn), .Din(pixel));
+	song song1(.clk(clk), .start_game(start_sig & ~SW[0]), .buzzer(buzzer));
  	game game0(	.clk(clk), 
 				.rst(rst), 
 				.keyboard_data(keyboard_data), 
@@ -67,7 +70,8 @@ module top (
 				.score(score),
 				.state(state),
 				.pause(pause),
-				.reset(reset));
+				.reset(reset),
+				.start_sig(start_sig));
 	display dis(.clk(clk25MHZ), 
 				.rst(rst), 
 				.square_degree(square_degree),
@@ -81,7 +85,7 @@ module top (
 				.col(col),
 				.color(pixel));
 
-	clock timer(.clk(clk&(!pause)),.reset(reset),.SEG_CLK(SEG_CLK),.SEG_CLR(SEG_CLR),.SEG_DO(SEG_DO),.SEG_EN(SEG_EN));
+	clock timer(.clk(clk&(!pause)&(!reset)),.reset(reset),.SEG_CLK(SEG_CLK),.SEG_CLR(SEG_CLR),.SEG_DO(SEG_DO),.SEG_EN(SEG_EN));
 
 	dis_score d0 (.clk(clk),.score(score),.SEG(SEG),.AN(AN));
 endmodule	

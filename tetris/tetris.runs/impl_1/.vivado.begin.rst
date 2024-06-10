@@ -1,45 +1,20 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="15320" HostCore="20" HostMemory="014710988800">
+    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="27948" HostCore="20" HostMemory="014710988800">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="26416" HostCore="20" HostMemory="014710988800">
+    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="27968" HostCore="20" HostMemory="014710988800">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="22696" HostCore="20" HostMemory="014710988800">
+    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="27100" HostCore="20" HostMemory="014710988800">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="14956" HostCore="20" HostMemory="014710988800">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="13664" HostCore="20" HostMemory="014710988800">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="27848" HostCore="20" HostMemory="014710988800">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="23628" HostCore="20" HostMemory="014710988800">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="24556" HostCore="20" HostMemory="014710988800">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="24384" HostCore="20" HostMemory="014710988800">
+    <Process Command="vivado.bat" Owner="csy" Host="LAPTOP-LCA5B7K9" Pid="27276" HostCore="20" HostMemory="014710988800">
     </Process>
 </ProcessHandle>

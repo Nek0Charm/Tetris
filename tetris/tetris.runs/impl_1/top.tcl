@@ -139,9 +139,9 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/top.dcp
-  read_ip -quiet c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_start/blk_mem_gen_start.xci
+  read_ip -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_start/blk_mem_gen_start.xci
   read_ip -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_over/blk_mem_gen_over.xci
-  read_ip -quiet c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_play/blk_mem_gen_play.xci
+  read_ip -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_play/blk_mem_gen_play.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc
 OPTRACE "read constraints: implementation" END { }

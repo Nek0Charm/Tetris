@@ -134,3 +134,6 @@ set_property PACKAGE_PIN AE21       [get_ports LED[6]]
 set_property IOSTANDARD LVCMOS33    [get_ports LED[6]]
 set_property PACKAGE_PIN AF24       [get_ports LED[7]]
 set_property IOSTANDARD LVCMOS33    [get_ports LED[7]]
+
+set_property PACKAGE_PIN AF25 [get_ports buzzer]
+set_property IOSTANDARD LVCMOS33 [get_ports buzzer]

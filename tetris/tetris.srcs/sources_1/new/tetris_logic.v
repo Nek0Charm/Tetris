@@ -249,7 +249,7 @@ module tetris_logic(
                                 isMovable = 0;
                             end
                             else if ((square_type != O) 
-                                    && (square_x == 0 || square_x == 9)) begin
+                                    && (square_x == 0 || square_x == 9 || square_y == 19)) begin
                                 isMovable = 0;
                             end                   
                             for(i = 0; i < 4; i = i+1) begin
@@ -284,11 +284,11 @@ module tetris_logic(
                         if(&map[j*10+:10]) begin
                             complete_rows = j;
                             flag = 1;
-                            score = score + 1;
                         end 
                     end
                     
                     if (flag) begin
+                        score <= score + 1;
                         i <= complete_rows;
                         state <= DELETE_ROW;
                     end

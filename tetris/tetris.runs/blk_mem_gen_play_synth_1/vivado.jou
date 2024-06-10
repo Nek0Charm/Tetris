@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Jun 10 16:24:09 2024
-# Process ID: 18004
+# Start of session at: Mon Jun 10 17:21:34 2024
+# Process ID: 23432
 # Current directory: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/blk_mem_gen_play_synth_1
 # Command line: vivado.exe -log blk_mem_gen_play.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_play.tcl
 # Log file: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/blk_mem_gen_play_synth_1/blk_mem_gen_play.vds
