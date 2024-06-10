@@ -23,7 +23,7 @@
 module tetris_logic(
     input clk,
     input rst,
-    input keyboard_data,
+    input [7:0] keyboard_data,
     input keyboard_ready,
     input start_sig,
     output reg[199:0] map,
@@ -32,36 +32,36 @@ module tetris_logic(
     output reg[4:0] square_y,
     output reg[2:0] square_type,
     output reg[1:0] square_degree,
-    output reg [15:0] score
-    );
+    output reg [15:0] score,
+    output pause,
+    output reset
+);
     parameter I = 3'b000, J = 3'b001, L = 3'b010, Z = 3'b011, S = 3'b100, T = 3'b101, O = 3'b110;
-    parameter   INIT = 3'b000, 
-                GENERATOR = 3'b001, 
-                WAIT = 3'b010, 
-                CHECK_IF_MOVABLE = 3'b011, 
-                CHECK_COMPLETE_ROW = 3'b100, 
-                DELETE_ROW = 3'b101, 
-                CHECK_IF_OVER = 3'b110,
-                UPDATE_MAP = 3'b111;
+    parameter   INIT = 4'b0000, 
+                GENERATOR = 4'b0001, 
+                WAIT = 4'b0010, 
+                CHECK_IF_MOVABLE = 4'b0011, 
+                CHECK_COMPLETE_ROW = 4'b0100, 
+                DELETE_ROW = 4'b0101, 
+                CHECK_IF_OVER = 4'b0110,
+                UPDATE_MAP = 4'b0111,
+                STOP = 4'b1000;
     parameter FALL = 2'b00, LEFT = 2'b01, RIGHT = 2'b10, ROTATE = 2'b11;  
     reg isMovable;
     reg over_sig_r;
     reg isOver;
     reg isDelete;
-    reg [2:0] state;
+    reg [3:0] state;
     reg [4:0] next_x, next_y;
-    reg [2:0] rand_num;
+    reg [7:0] rand_num;
     reg [31:0] count_time;
     reg [4:0] complete_rows;//a
-    reg [4:0] complete_num;//a
-    wire [1:0] act;
-    assign act = (keyboard_data == 8'h1c) ? LEFT 
-                :(keyboard_data == 8'h23) ? RIGHT
-                :(keyboard_data == 8'h1d) ? ROTATE
-                :FALL;
+    reg [1:0] act;
     assign over_sig = over_sig_r;
     integer i,j,m,k,flag;
     integer shape[6:0][3:0][3:0];
+    assign pause = (state == STOP || over_sig_r == 1 || (state == INIT && start_sig == 0)) ? 1 : 0;
+    assign reset = (state == INIT && start_sig == 1) ? 1 : 0;
     initial begin
         // Row 0
         shape[0][0][0] = 0; shape[0][0][1] = -1; shape[0][0][2] = 1; shape[0][0][3] = 2;
@@ -95,9 +95,9 @@ module tetris_logic(
 
         // Row 5
         shape[5][0][0] = 0; shape[5][0][1] = 1; shape[5][0][2] = -1; shape[5][0][3] = 10;
-        shape[5][1][0] = 0; shape[5][1][1] = -10; shape[5][1][2] = 1; shape[5][1][3] = 11;
-        shape[5][2][0] = 0; shape[5][2][1] = 1; shape[5][2][2] = -1; shape[5][2][3] = 10;
-        shape[5][3][0] = 0; shape[5][3][1] = -10; shape[5][3][2] = 1; shape[5][3][3] = 11;
+        shape[5][1][0] = 0; shape[5][1][1] = -10; shape[5][1][2] = -1; shape[5][1][3] = 10;
+        shape[5][2][0] = 0; shape[5][2][1] = 1; shape[5][2][2] = -1; shape[5][2][3] = -10;
+        shape[5][3][0] = 0; shape[5][3][1] = -10; shape[5][3][2] = 1; shape[5][3][3] = 10;
 
         // Row 6
         shape[6][0][0] = 0; shape[6][0][1] = 1; shape[6][0][2] = 10; shape[6][0][3] = 11;
@@ -105,20 +105,23 @@ module tetris_logic(
         shape[6][2][0] = 0; shape[6][2][1] = 1; shape[6][2][2] = 10; shape[6][2][3] = 11;
         shape[6][3][0] = 0; shape[6][3][1] = 1; shape[6][3][2] = 10; shape[6][3][3] = 11;
     end
+    reg [1:0] Fall_ready;
+    always @(posedge clk) begin
+        Fall_ready = {Fall_ready[0], keyboard_ready};
+    end
     initial begin
         map = 200'b0;
-        rand_num = 0;    
+        rand_num = 0;
+        Fall_ready = 2'b00;
+        score = 0;    
         square_degree = 0;
     end
     
+    
     always @(posedge clk) begin
-        rand_num = rand_num + 3'b001;
-        if(rand_num == 7 ) begin
-            rand_num = 3'b000;
-        end 
+        rand_num = rand_num + 1;
         if(rst || !start_sig) begin
             map <= 200'b0;
-            score <= 0;
             isOver <= 0;
             state <= INIT;
         end
@@ -126,6 +129,10 @@ module tetris_logic(
             case (state)
                 INIT:begin
                     if(start_sig) begin
+                        map <= 200'b0;
+                        score <= 0;
+                        isOver <= 0;
+                        over_sig_r <= 0;
                         state <= GENERATOR;
                     end
                     else begin
@@ -133,31 +140,60 @@ module tetris_logic(
                     end
                 end
                 GENERATOR: begin
-                    square_type <= rand_num;
-                    square_x <= 5;
-                    square_y <= 2;
+                    square_type <= rand_num[3:0] % 7;
+                    square_x <= rand_num[7:4] % 7 + 1;
+                    square_y <= 1;
                     state <= WAIT;
                     count_time <= 0;
                 end 
-                WAIT: begin
-                    if(act != FALL) begin
+                WAIT: begin             
+                    count_time <= count_time + 1;
+                    if(Fall_ready == 2'b10 && keyboard_data == 8'h1c) begin
+                        isMovable <= 1;
+                        next_x <= square_x-1;
+                        next_y <= square_y;
+                        act <= LEFT;
                         state <= CHECK_IF_MOVABLE;
                     end
-                    if(count_time < 50000000) begin
-                        count_time = count_time + 1;
+                    else if(Fall_ready == 2'b10 && keyboard_data == 8'h23) begin
+                        isMovable <= 1;
+                        next_x <= square_x+1;
+                        next_y <= square_y;
+                        act <= RIGHT;
+                        state <= CHECK_IF_MOVABLE;
+                    end
+                    else if(Fall_ready == 2'b10 && keyboard_data == 8'h1d) begin
+                        isMovable <= 1;
+                        next_x <= square_x;
+                        next_y <= square_y;
+                        act <= ROTATE;
+                        state <= CHECK_IF_MOVABLE;
+                    end
+                    else if(Fall_ready == 2'b10 && keyboard_data == 8'h1b) begin
+                        isMovable <= 1;
+                        next_x <= square_x;
+                        next_y <= square_y+1;
+                        act <= FALL;
+                        state <= CHECK_IF_MOVABLE;
+                    end
+                    else if(Fall_ready == 2'b10 && keyboard_data == 8'h29) begin
+                        state <= STOP;
+                    end
+                    else if(count_time < (50 / (score + 1) + 25) * 1000000) begin
                         state <= state;
                     end
                     else begin
+                        act <= FALL;
+                        isMovable <= 1;
+                        next_x <= square_x;
+                        next_y <= square_y+1;
                         count_time <= 0;
                         state <= CHECK_IF_MOVABLE;
                     end
                 end
                 CHECK_IF_MOVABLE: begin
-                    isMovable = 1;
                     case (act)
                         FALL: begin
-                            next_x = square_x;
-                            next_y = square_y + 1; 
                             for(i = 0; i < 4; i = i+1) begin
                                 if(map[10*next_y+next_x+shape[square_type][square_degree][i]] == 1 
                                     || 10*next_y+next_x+shape[square_type][square_degree][i] > 199) 
@@ -174,12 +210,10 @@ module tetris_logic(
                                 state = UPDATE_MAP;
                             end
                         end
-                        LEFT: begin
-                            next_x = square_x-1;
-                            next_y = square_y;                                               
+                        LEFT: begin                                              
                             for(i = 0; i < 4; i = i+1) begin
                                 if(map[10*next_y+next_x+shape[square_type][square_degree][i]] == 1 
-                                    || 10*next_y+next_x+shape[square_type][square_degree][i] / 10 != 10*square_y+square_x+shape[square_type][square_degree][i] / 10 ) 
+                                    || (10*next_y+next_x+shape[square_type][square_degree][i]) / 10 != (10*square_y+square_x+shape[square_type][square_degree][i]) / 10 ) 
                                     isMovable = 0;
                             end                           
                             if(isMovable) begin
@@ -190,15 +224,13 @@ module tetris_logic(
                             else begin
                                 square_x = square_x;
                                 square_y = square_y;
-                                state <= UPDATE_MAP;
+                                state <= WAIT;
                             end
                         end
-                        RIGHT: begin
-                            next_x = square_x + 1;
-                            next_y = square_y;                       
+                        RIGHT: begin                    
                                 for(i = 0; i < 4; i = i+1) begin
                                     if(map[10*next_y+next_x+shape[square_type][square_degree][i]] == 1
-                                        || 10*next_y+next_x+shape[square_type][square_degree][i] / 10 != 10*square_y+square_x+shape[square_type][square_degree][i] / 10) 
+                                        || (10*next_y+next_x+shape[square_type][square_degree][i]) / 10 != (10*square_y+square_x+shape[square_type][square_degree][i]) / 10) 
                                         isMovable = 0;
                                 end                   
                             if(isMovable) begin
@@ -209,15 +241,17 @@ module tetris_logic(
                             else begin
                                 square_x <= square_x;
                                 square_y <= square_y;
-                                state <= UPDATE_MAP;
+                                state <= WAIT;
                             end
                         end
                         ROTATE:begin
-                            next_x = square_x;
-                            next_y = square_y;
                             if(square_type == I && (square_x > 7 || square_x < 1 || square_y > 18))begin
                                 isMovable = 0;
                             end
+                            else if ((square_type != O) 
+                                    && (square_x == 0 || square_x == 9 || square_y == 19)) begin
+                                isMovable = 0;
+                            end                   
                             for(i = 0; i < 4; i = i+1) begin
                                 if(map[10*next_y+next_x+shape[square_type][square_degree+2'b01][i]] == 1)
                                     isMovable = 0;
@@ -225,18 +259,17 @@ module tetris_logic(
                             if(isMovable) begin
                                 square_x <= next_x;
                                 square_y <= next_y;
+                                square_degree <= square_degree + 2'b01;
                                 state <= WAIT;
                             end
                             else begin
                                 square_x <= square_x;
                                 square_y <= square_y;
-                                square_degree <= square_degree + 2'b01;
-                                state <= UPDATE_MAP;
+                                state <= WAIT;
                             end
                         end
 
                     endcase
-                    
                 end
                 UPDATE_MAP: begin
                     for(i = 0; i < 4; i = i+1) begin
@@ -246,16 +279,16 @@ module tetris_logic(
                 end
                 CHECK_COMPLETE_ROW: begin
                     complete_rows <= 0;
-                    flag <= 0;
+                    flag = 0;
                     for(j = 0;j < 20;j = j+1)begin
                         if(&map[j*10+:10]) begin
                             complete_rows = j;
                             flag = 1;
-                            score = score << 1;
                         end 
                     end
                     
                     if (flag) begin
+                        score <= score + 1;
                         i <= complete_rows;
                         state <= DELETE_ROW;
                     end
@@ -271,14 +304,12 @@ module tetris_logic(
                     else begin
                         map[0+:10] = 10'b0;
                         state <= CHECK_COMPLETE_ROW;
-                    end
+                    end            
                 end
-
-
                 CHECK_IF_OVER:begin
-                    isOver <= 0;
-                    if(map[30+:10]!=10'b0)begin
-                        isOver <= 1;
+                    isOver = 0;
+                    if(map[40+:10]!=10'b0)begin
+                        isOver = 1;
                     end
                     if(isOver)begin
                         over_sig_r <= 1;
@@ -286,6 +317,14 @@ module tetris_logic(
                     end
                     else begin
                         state <= GENERATOR;
+                    end
+                end
+                STOP: begin
+                    if(Fall_ready == 2'b10 && keyboard_data == 8'h29) begin
+                        state <= WAIT;
+                    end
+                    else begin
+                        state <= state;
                     end
                 end
             endcase
