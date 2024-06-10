@@ -1,23 +1,10 @@
-+====================+===================+===================================+
-| Launch Setup Clock | Launch Hold Clock | Pin                               |
-+====================+===================+===================================+
-| clk                | clk               | game0/gamestart/score_reg[15]/D   |
-| clk                | clk               | game0/gamestart/score_reg[14]/D   |
-| clk                | clk               | game0/gamestart/isMovable_reg/D   |
-| clk                | clk               | game0/gamestart/score_reg[13]/D   |
-| clk                | clk               | game0/gamestart/square_x_reg[2]/D |
-| clk                | clk               | game0/gamestart/square_y_reg[0]/D |
-| clk                | clk               | game0/gamestart/square_x_reg[0]/D |
-| clk                | clk               | game0/gamestart/square_x_reg[1]/D |
-| clk                | clk               | game0/gamestart/score_reg[10]/D   |
-| clk                | clk               | game0/gamestart/score_reg[12]/D   |
-| clk                | clk               | game0/gamestart/score_reg[11]/D   |
-| clk                | clk               | game0/gamestart/score_reg[9]/D    |
-| clk                | clk               | game0/gamestart/score_reg[8]/D    |
-| clk                | clk               | game0/gamestart/score_reg[7]/D    |
-| clk                | clk               | game0/gamestart/score_reg[6]/D    |
-| clk                | clk               | game0/gamestart/score_reg[5]/D    |
-| clk                | clk               | game0/gamestart/score_reg[4]/D    |
-| clk                | clk               | game0/gamestart/score_reg[3]/D    |
-| clk                | clk               | game0/gamestart/score_reg[1]/D    |
-+--------------------+-------------------+-----------------------------------+
++====================+===================+=====================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                 |
++====================+===================+=====================================+
+| clk                | clk               | game0/gamestart/square_y_reg[0]/D   |
+| clk                | clk               | game0/gamestart/square_x_reg[2]/D   |
+| clk                | clk               | game0/gamestart/square_x_reg[0]/D   |
+| clk                | clk               | game0/gamestart/isMovable_reg/D     |
+| clk                | clk               | game0/gamestart/square_x_reg[1]/D   |
+| clk                | clk               | game0/gamestart/count_time_reg[0]/D |
++--------------------+-------------------+-------------------------------------+

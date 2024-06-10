@@ -24,61 +24,62 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23536
+INFO: [Synth 8-7075] Helper process launched with PID 18308
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1430.352 ; gain = 439.680
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1432.691 ; gain = 441.648
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-9926] potential always loop found [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v:135]
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v:1]
 INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/clk_div.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/clk_div.v:1]
 INFO: [Synth 8-6157] synthesizing module 'PS2_Keyboard_Driver' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/PS2_Keyboard_Driver.v:25]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/PS2_Keyboard_Driver.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/PS2_Keyboard_Driver.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'PS2_Keyboard_Driver' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/PS2_Keyboard_Driver.v:25]
 INFO: [Synth 8-6157] synthesizing module 'VGA' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/vga.v:67]
 INFO: [Synth 8-6155] done synthesizing module 'VGA' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/vga.v:67]
 INFO: [Synth 8-6157] synthesizing module 'game' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/game.v:23]
 INFO: [Synth 8-6157] synthesizing module 'tetris_logic' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:23]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
-WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:280]
-WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+WARNING: [Synth 8-6090] variable 'complete_rows' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:281]
+WARNING: [Synth 8-6090] variable 'flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:282]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:125]
 INFO: [Synth 8-6155] done synthesizing module 'tetris_logic' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/tetris_logic.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'game' (0#1) [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/game.v:23]
 INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v:1]
@@ -128,18 +129,18 @@ WARNING: [Synth 8-7129] Port score[2] in module display is either unconnected or
 WARNING: [Synth 8-7129] Port score[1] in module display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port score[0] in module display is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1556.094 ; gain = 565.422
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1553.398 ; gain = 562.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1556.094 ; gain = 565.422
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1553.398 ; gain = 562.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1556.094 ; gain = 565.422
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1553.398 ; gain = 562.355
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1556.094 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1553.398 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -312,29 +313,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1666.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1652.879 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 系统找不到指定的路径。
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1666.059 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1652.879 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1666.059 ; gain = 675.387
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1652.879 ; gain = 661.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1666.059 ; gain = 675.387
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1652.879 ; gain = 661.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1666.059 ; gain = 675.387
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1652.879 ; gain = 661.836
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PS2_Keyboard_Driver'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'game'
@@ -356,7 +357,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'game'
 WARNING: [Synth 8-327] inferring latch for variable 'color_reg' [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/display.v:79]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1666.059 ; gain = 675.387
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1652.879 ; gain = 661.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -364,10 +365,12 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   32 Bit       Adders := 15    
-	   2 Input   16 Bit       Adders := 20    
+	   2 Input   17 Bit       Adders := 1     
+	  21 Input   16 Bit       Adders := 1     
 	   2 Input   10 Bit       Adders := 3     
 	   2 Input    9 Bit       Adders := 1     
 	   2 Input    8 Bit       Adders := 9     
+	   2 Input    7 Bit       Adders := 1     
 	   2 Input    5 Bit       Adders := 2     
 	   2 Input    3 Bit       Adders := 1     
 	   2 Input    2 Bit       Adders := 2     
@@ -375,49 +378,49 @@ Detailed RTL Component Info :
 	                9 Bit    Wide XORs := 1     
 +---Registers : 
 	              200 Bit    Registers := 1     
-	               32 Bit    Registers := 5     
+	               32 Bit    Registers := 4     
 	               16 Bit    Registers := 1     
 	               10 Bit    Registers := 4     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 3     
 	                5 Bit    Registers := 8     
-	                4 Bit    Registers := 3     
-	                3 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 6     
 	                1 Bit    Registers := 8     
 +---Multipliers : 
 	               4x29  Multipliers := 1     
 +---Muxes : 
-	   8 Input  200 Bit        Muxes := 3     
+	  10 Input  200 Bit        Muxes := 3     
 	   2 Input  200 Bit        Muxes := 2     
-	   2 Input   32 Bit        Muxes := 41    
-	   8 Input   32 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 2     
+	  10 Input   32 Bit        Muxes := 4     
 	  21 Input   32 Bit        Muxes := 1     
-	   3 Input   32 Bit        Muxes := 20    
-	   6 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 1     
 	   4 Input   32 Bit        Muxes := 9     
-	   8 Input   16 Bit        Muxes := 1     
+	  10 Input   16 Bit        Muxes := 1     
 	   2 Input   12 Bit        Muxes := 4     
 	   7 Input   12 Bit        Muxes := 1     
 	   4 Input   12 Bit        Muxes := 1     
 	   3 Input   10 Bit        Muxes := 1     
 	   7 Input    6 Bit        Muxes := 6     
 	   2 Input    5 Bit        Muxes := 1     
-	   8 Input    5 Bit        Muxes := 3     
+	  10 Input    5 Bit        Muxes := 3     
 	   7 Input    5 Bit        Muxes := 27    
-	   5 Input    3 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 4     
-	   6 Input    3 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   5 Input    3 Bit        Muxes := 2     
 	   3 Input    3 Bit        Muxes := 1     
 	   3 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 7     
-	   6 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 51    
-	   3 Input    1 Bit        Muxes := 25    
-	   8 Input    1 Bit        Muxes := 17    
+	   2 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 16    
 	   5 Input    1 Bit        Muxes := 2     
 	   4 Input    1 Bit        Muxes := 4     
-	   6 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -434,6 +437,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP state2, operation Mode is: (A:0xf4240)*B.
+DSP Report: operator state2 is absorbed into DSP state2.
 WARNING: [Synth 8-7129] Port clk in module display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port score[15] in module display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port score[14] in module display is either unconnected or has no load
@@ -452,25 +457,41 @@ WARNING: [Synth 8-7129] Port score[2] in module display is either unconnected or
 WARNING: [Synth 8-7129] Port score[1] in module display is either unconnected or has no load
 WARNING: [Synth 8-7129] Port score[0] in module display is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:34 . Memory (MB): peak = 1666.059 ; gain = 675.387
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 1652.879 ; gain = 661.836
+---------------------------------------------------------------------------------
+ Sort Area is  state2_0 : 0 0 : 502 502 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|tetris_logic | (A:0xf4240)*B | 20     | 7      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 1666.059 ; gain = 675.387
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:39 . Memory (MB): peak = 1652.879 ; gain = 661.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:01:03 . Memory (MB): peak = 1837.109 ; gain = 846.438
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:56 . Memory (MB): peak = 1890.609 ; gain = 899.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:01:06 . Memory (MB): peak = 1849.434 ; gain = 858.762
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 1908.680 ; gain = 917.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -488,41 +509,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:01:10 . Memory (MB): peak = 1849.434 ; gain = 858.762
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:01:02 . Memory (MB): peak = 1908.680 ; gain = 917.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:01:10 . Memory (MB): peak = 1849.434 ; gain = 858.762
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:01:02 . Memory (MB): peak = 1908.680 ; gain = 917.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:01:10 . Memory (MB): peak = 1849.434 ; gain = 858.762
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:01:02 . Memory (MB): peak = 1908.680 ; gain = 917.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:01:10 . Memory (MB): peak = 1849.434 ; gain = 858.762
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:01:02 . Memory (MB): peak = 1908.680 ; gain = 917.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:01:10 . Memory (MB): peak = 1849.434 ; gain = 858.762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:01:03 . Memory (MB): peak = 1908.680 ; gain = 917.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:01:10 . Memory (MB): peak = 1849.434 ; gain = 858.762
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:01:03 . Memory (MB): peak = 1908.680 ; gain = 917.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|tetris_logic | A*B         | 20     | 7      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
 
 Report BlackBoxes: 
 +-+--------------+----------+
@@ -531,52 +560,53 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |  1138|
-|3     |LUT1   |   182|
-|4     |LUT2   |  1059|
-|5     |LUT3   |  1387|
-|6     |LUT4   |  1317|
-|7     |LUT5   |   809|
-|8     |LUT6   |  2914|
-|9     |MUXF7  |   202|
-|10    |MUXF8  |    82|
-|11    |FDCE   |    10|
-|12    |FDRE   |   424|
-|13    |FDSE   |     4|
-|14    |LD     |     4|
-|15    |IBUF   |     4|
-|16    |OBUF   |    27|
-|17    |OBUFT  |     7|
-+------+-------+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |  1104|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |   215|
+|5     |LUT2    |  1039|
+|6     |LUT3    |  1591|
+|7     |LUT4    |   994|
+|8     |LUT5    |   995|
+|9     |LUT6    |  2946|
+|10    |MUXF7   |   211|
+|11    |MUXF8   |    98|
+|12    |FDCE    |    10|
+|13    |FDRE    |   423|
+|14    |FDSE    |     1|
+|15    |LD      |     4|
+|16    |IBUF    |     4|
+|17    |OBUF    |    27|
+|18    |OBUFT   |     7|
++------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:01:10 . Memory (MB): peak = 1849.434 ; gain = 858.762
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:01:03 . Memory (MB): peak = 1908.680 ; gain = 917.637
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:01:08 . Memory (MB): peak = 1849.434 ; gain = 748.797
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:01:11 . Memory (MB): peak = 1849.434 ; gain = 858.762
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:01:01 . Memory (MB): peak = 1908.680 ; gain = 818.156
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:01:03 . Memory (MB): peak = 1908.680 ; gain = 917.637
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1852.582 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1426 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1908.680 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1418 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1858.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1908.680 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   LD => LDCE: 4 instances
 
 系统找不到指定的路径。
-Synth Design complete | Checksum: 271eed78
+Synth Design complete | Checksum: 9995f116
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 144 Warnings, 54 Critical Warnings and 0 Errors encountered.
+54 Infos, 144 Warnings, 54 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:01:17 . Memory (MB): peak = 1858.414 ; gain = 1288.797
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:01:08 . Memory (MB): peak = 1908.680 ; gain = 1338.102
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1858.414 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1908.680 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  9 15:28:53 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 10 11:36:09 2024...

@@ -17,7 +17,7 @@ module display(
     parameter Start = 2'b00, Playing = 2'b01, Over = 2'b10;
     parameter   White = 12'b111111111111,
                 Black = 12'b000000000000,
-                Blue = 12'h00f,
+                Blue = 12'hf00,
                 Grey = 12'h777;
     parameter h_start = 11'd0;  
     parameter v_start = 11'd0;

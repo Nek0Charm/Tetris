@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sun Jun  9 15:29:01 2024
-# Process ID: 18148
+# Start of session at: Mon Jun 10 11:36:17 2024
+# Process ID: 22160
 # Current directory: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/top.vdi
@@ -16,8 +16,8 @@ Command: link_design -top top -part xc7k160tffg676-2L
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7k160tffg676-2L
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 992.441 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1422 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 992.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1414 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2023.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -186,13 +186,13 @@ CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1140.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1140.148 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 7 Infos, 54 Warnings, 54 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1145.312 ; gain = 578.270
+link_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1140.148 ; gain = 572.559
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k160t'
@@ -203,111 +203,111 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.662 . Memory (MB): peak = 1164.270 ; gain = 18.957
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.742 . Memory (MB): peak = 1165.301 ; gain = 25.152
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: f542d87d
+Ending Cache Timing Information Task | Checksum: 1afdc3268
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1736.863 ; gain = 572.594
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1700.602 ; gain = 535.301
 
 Starting Logic Optimization Task
 
 Phase 1 Initialization
 
 Phase 1.1 Core Generation And Design Setup
-Phase 1.1 Core Generation And Design Setup | Checksum: f542d87d
+Phase 1.1 Core Generation And Design Setup | Checksum: 1afdc3268
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 1.2 Setup Constraints And Sort Netlist
-Phase 1.2 Setup Constraints And Sort Netlist | Checksum: f542d87d
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1afdc3268
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Phase 1 Initialization | Checksum: f542d87d
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1afdc3268
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Timer Update
-Phase 2.1 Timer Update | Checksum: f542d87d
+Phase 2.1 Timer Update | Checksum: 1afdc3268
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 2.2 Timing Data Collection
-Phase 2.2 Timing Data Collection | Checksum: f542d87d
+Phase 2.2 Timing Data Collection | Checksum: 1afdc3268
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Phase 2 Timer Update And Timing Data Collection | Checksum: f542d87d
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1afdc3268
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3 Retarget
-INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 50 pins
+INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 117 pins
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 3 Retarget | Checksum: 677c048f
+Phase 3 Retarget | Checksum: 11d3d1f69
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.245 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Retarget | Checksum: 677c048f
-INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 11 cells
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.292 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Retarget | Checksum: 11d3d1f69
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 16 cells
 
 Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 4 Constant propagation | Checksum: 158497887
+Phase 4 Constant propagation | Checksum: 1c8b07e79
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.298 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Constant propagation | Checksum: 158497887
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Constant propagation | Checksum: 1c8b07e79
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 5 Sweep
-Phase 5 Sweep | Checksum: 13a946ff3
+Phase 5 Sweep | Checksum: e59e7185
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.366 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Sweep | Checksum: 13a946ff3
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.403 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Sweep | Checksum: e59e7185
 INFO: [Opt 31-389] Phase Sweep created 8 cells and removed 0 cells
 
 Phase 6 BUFG optimization
-Phase 6 BUFG optimization | Checksum: 13a946ff3
+Phase 6 BUFG optimization | Checksum: e59e7185
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.432 . Memory (MB): peak = 2103.953 ; gain = 0.000
-BUFG optimization | Checksum: 13a946ff3
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.465 . Memory (MB): peak = 2066.641 ; gain = 0.000
+BUFG optimization | Checksum: e59e7185
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 7 Shift Register Optimization | Checksum: 13a946ff3
+Phase 7 Shift Register Optimization | Checksum: e59e7185
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.436 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Shift Register Optimization | Checksum: 13a946ff3
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.470 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Shift Register Optimization | Checksum: e59e7185
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
-Phase 8 Post Processing Netlist | Checksum: bb22ab4c
+Phase 8 Post Processing Netlist | Checksum: 138dacccf
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.450 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Post Processing Netlist | Checksum: bb22ab4c
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.483 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Post Processing Netlist | Checksum: 138dacccf
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 
 Phase 9 Finalization
 
 Phase 9.1 Finalizing Design Cores and Updating Shapes
-Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: e9b54861
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 17802d86e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.702 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.711 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Phase 9.2 Verifying Netlist Connectivity | Checksum: e9b54861
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 17802d86e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.713 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Phase 9 Finalization | Checksum: e9b54861
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.721 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Phase 9 Finalization | Checksum: 17802d86e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.715 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.723 . Memory (MB): peak = 2066.641 ; gain = 0.000
 Opt_design Change Summary
 =========================
 
@@ -315,7 +315,7 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               0  |              11  |                                              0  |
+|  Retarget                     |               0  |              16  |                                              0  |
 |  Constant propagation         |               0  |               0  |                                              0  |
 |  Sweep                        |               8  |               0  |                                              0  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
@@ -324,32 +324,32 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Ending Logic Optimization Task | Checksum: e9b54861
+Ending Logic Optimization Task | Checksum: 17802d86e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.717 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.725 . Memory (MB): peak = 2066.641 ; gain = 0.000
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: e9b54861
+Ending Power Optimization Task | Checksum: 17802d86e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: e9b54861
+Ending Final Cleanup Task | Checksum: 17802d86e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: e9b54861
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 17802d86e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2066.641 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 26 Infos, 54 Warnings, 54 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2103.953 ; gain = 958.641
+opt_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2066.641 ; gain = 926.492
 INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -359,16 +359,16 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/top_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2066.641 ; gain = 0.000
 Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2066.641 ; gain = 0.000
 Writing XDEF routing logical nets.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2103.953 ; gain = 0.000
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2066.641 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/top_opt.dcp' has been generated.
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
@@ -388,59 +388,59 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 67e9e72b
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 8d530ad7
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f758d260
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ef51abe8
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.521 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.512 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 173359baf
+Phase 1.3 Build Placer Netlist Model | Checksum: 1d9d9eb90
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 173359baf
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1d9d9eb90
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 173359baf
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1d9d9eb90
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: ff7e1b97
+Phase 2.1 Floorplanning | Checksum: 13fbfa3a8
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 14d6c4059
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 13219e1fc
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 14d6c4059
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 13219e1fc
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 2.4 Global Placement Core
 
 Phase 2.4.1 UpdateTiming Before Physical Synthesis
-Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1c345087b
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1c566d7ac
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 2.4.2 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 10 LUTNM shape to break, 123 LUT instances to create LUTNM shape
-INFO: [Physopt 32-1044] Break lutnm for timing: one critical 4, two critical 6, total 10, new lutff created 0
-INFO: [Physopt 32-1138] End 1 Pass. Optimized 32 nets or LUTs. Breaked 10 LUTs, combined 22 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 154 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 47 nets or LUTs. Breaked 0 LUT, combined 47 existing LUTs and moved 0 existing LUT
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -459,7 +459,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -468,7 +468,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |           10  |             22  |                    32  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |            0  |             47  |                    47  |           0  |           1  |  00:00:00  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
@@ -477,69 +477,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |           10  |             22  |                    32  |           0  |           9  |  00:00:00  |
+|  Total                                            |            0  |             47  |                    47  |           0  |           9  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.4.2 Physical Synthesis In Placer | Checksum: 213ecd5ea
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1b43ee8e7
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Phase 2.4 Global Placement Core | Checksum: 1570ca690
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 1e6dfeddc
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 1570ca690
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1e6dfeddc
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1b350a41d
+Phase 3.1 Commit Multi Column Macros | Checksum: 22f2d9e9e
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 177653526
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e7412e5e
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 18380f39b
+Phase 3.3 Area Swap Optimization | Checksum: 15f4e5179
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1decfe40a
+Phase 3.4 Pipeline Register Optimization | Checksum: 162066042
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 1e6eb55d4
+Phase 3.5 Fast Optimization | Checksum: 15c0f5c59
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 24c5b4bd0
+Phase 3.6 Small Shape Detail Placement | Checksum: 18d96c1fe
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 1c0428ea7
+Phase 3.7 Re-assign LUT pins | Checksum: 1bd6b6583
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 14ebaead4
+Phase 3.8 Pipeline Register Optimization | Checksum: 1bbd354da
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 1b6886b65
+Phase 3.9 Fast Optimization | Checksum: 139eaa311
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 2103.953 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1b6886b65
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2066.641 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 139eaa311
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 2103.953 ; gain = 0.000
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2066.641 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -547,7 +547,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: ed71dbae
+Post Placement Optimization Initialization | Checksum: 1db71da7f
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -555,33 +555,33 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.180 | TNS=-141.268 |
-Phase 1 Physical Synthesis Initialization | Checksum: c99815cb
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.276 | TNS=-167.473 |
+Phase 1 Physical Synthesis Initialization | Checksum: 2122d8ed3
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 2127.340 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 2100.223 ; gain = 0.000
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
-Ending Physical Synthesis Task | Checksum: c99815cb
+Ending Physical Synthesis Task | Checksum: 2122d8ed3
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.175 . Memory (MB): peak = 2127.340 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: ed71dbae
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 2100.223 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1db71da7f
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 2127.340 ; gain = 23.387
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 2100.223 ; gain = 33.582
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-4.833. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: ffc5e645
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.941. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1144d4e06
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2127.340 ; gain = 23.387
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2127.340 ; gain = 23.387
-Phase 4.1 Post Commit Optimization | Checksum: ffc5e645
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
+Phase 4.1 Post Commit Optimization | Checksum: 1144d4e06
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2127.340 ; gain = 23.387
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: ffc5e645
+Phase 4.2 Post Placement Cleanup | Checksum: 1144d4e06
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2127.340 ; gain = 23.387
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
 
 Phase 4.3 Placer Reporting
 
@@ -591,7 +591,7 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |           | Global Congestion | Short Congestion  |
 | Direction | Region Size       | Region Size       |
 |___________|___________________|___________________|
-|      North|                1x1|                2x2|
+|      North|                1x1|                4x4|
 |___________|___________________|___________________|
 |      South|                1x1|                4x4|
 |___________|___________________|___________________|
@@ -600,42 +600,42 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: ffc5e645
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1144d4e06
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2127.340 ; gain = 23.387
-Phase 4.3 Placer Reporting | Checksum: ffc5e645
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
+Phase 4.3 Placer Reporting | Checksum: 1144d4e06
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2127.340 ; gain = 23.387
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2127.340 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2137.055 ; gain = 0.000
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2127.340 ; gain = 23.387
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: d5881606
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 8d166771
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2127.340 ; gain = 23.387
-Ending Placer Task | Checksum: 992f1b5e
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
+Ending Placer Task | Checksum: 725709c3
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2127.340 ; gain = 23.387
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
 71 Infos, 54 Warnings, 54 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 2127.340 ; gain = 23.387
+place_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 2137.055 ; gain = 70.414
 INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2127.340 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2137.055 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2127.340 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2137.055 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2135.129 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.394 . Memory (MB): peak = 2135.129 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2135.129 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2150.590 ; gain = 0.016
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.372 . Memory (MB): peak = 2150.590 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2150.590 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2135.129 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2135.129 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2135.129 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.431 . Memory (MB): peak = 2135.129 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2150.590 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2150.590 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2150.590 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.406 . Memory (MB): peak = 2150.590 ; gain = 0.016
 INFO: [Common 17-1381] The checkpoint 'C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/top_placed.dcp' has been generated.
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
@@ -643,208 +643,287 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 
 Starting Initial Update Timing Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.634 . Memory (MB): peak = 2149.625 ; gain = 14.496
-INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.69s
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2149.625 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.621 . Memory (MB): peak = 2152.883 ; gain = 2.293
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.66s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2152.883 ; gain = 0.000
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.833 | TNS=-134.044 |
-Phase 1 Physical Synthesis Initialization | Checksum: 18053a36e
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.838 | TNS=-150.677 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1da6141ed
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.471 . Memory (MB): peak = 2152.973 ; gain = 3.348
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.833 | TNS=-134.044 |
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.426 . Memory (MB): peak = 2156.219 ; gain = 3.336
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.838 | TNS=-150.677 |
 
 Phase 2 DSP Register Optimization
 INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Phase 2 DSP Register Optimization | Checksum: 18053a36e
+Phase 2 DSP Register Optimization | Checksum: 1da6141ed
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.485 . Memory (MB): peak = 2152.973 ; gain = 3.348
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.440 . Memory (MB): peak = 2156.219 ; gain = 3.336
 
 Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.833 | TNS=-134.044 |
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg_n_0_[11]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net game0/gamestart/map[8].  Re-placed instance game0/gamestart/map_reg[8]
-INFO: [Physopt 32-735] Processed net game0/gamestart/map[8]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.828 | TNS=-133.914 |
-INFO: [Physopt 32-81] Processed net game0/gamestart/map[5]. Replicated 1 times.
-INFO: [Physopt 32-735] Processed net game0/gamestart/map[5]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.788 | TNS=-132.874 |
-INFO: [Physopt 32-702] Processed net game0/gamestart/map[8]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-710] Processed net game0/gamestart/difficulty[26]_i_1_n_0. Critical path length was reduced through logic transformation on cell game0/gamestart/difficulty[26]_i_1_comp.
-INFO: [Physopt 32-735] Processed net game0/gamestart/difficulty[26]_i_2_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.648 | TNS=-132.034 |
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[25]_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-710] Processed net game0/gamestart/difficulty[25]_i_7_n_0. Critical path length was reduced through logic transformation on cell game0/gamestart/difficulty[25]_i_7_comp.
-INFO: [Physopt 32-735] Processed net game0/gamestart/difficulty[25]_i_8_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.635 | TNS=-131.993 |
-INFO: [Physopt 32-710] Processed net game0/gamestart/difficulty[26]_i_1_n_0. Critical path length was reduced through logic transformation on cell game0/gamestart/difficulty[26]_i_1_comp_1.
-INFO: [Physopt 32-735] Processed net game0/gamestart/difficulty[26]_i_3_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.546 | TNS=-131.459 |
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_11_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-710] Processed net game0/gamestart/difficulty[26]_i_11_n_0. Critical path length was reduced through logic transformation on cell game0/gamestart/difficulty[26]_i_11_comp.
-INFO: [Physopt 32-735] Processed net game0/gamestart/difficulty[25]_i_8_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.512 | TNS=-131.257 |
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 22 pins.
-INFO: [Physopt 32-735] Processed net game0/gamestart/difficulty[25]_i_25_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.456 | TNS=-130.697 |
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[25]_i_25_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[15]_i_4_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[15]_i_5_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[11]_i_4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[11]_i_5_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_38_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_35_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_43_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_85_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_40_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_75_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_118_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_63_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_70_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_126_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_109_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_119_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_37_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_25_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_51_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_92_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_18_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_50_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_49_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_91_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_58_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_97_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/state[1]_i_11_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
-INFO: [Physopt 32-735] Processed net game0/gamestart/difficulty[26]_i_1_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.450 | TNS=-130.661 |
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.838 | TNS=-150.677 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/square_x[4].  Re-placed instance game0/gamestart/square_x_reg[4]
+INFO: [Physopt 32-735] Processed net game0/gamestart/square_x[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.838 | TNS=-150.595 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/square_y[1].  Re-placed instance game0/gamestart/square_y_reg[1]
+INFO: [Physopt 32-735] Processed net game0/gamestart/square_y[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.838 | TNS=-150.513 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/square_y[2].  Re-placed instance game0/gamestart/square_y_reg[2]
+INFO: [Physopt 32-735] Processed net game0/gamestart/square_y[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.838 | TNS=-150.431 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/square_y[3].  Re-placed instance game0/gamestart/square_y_reg[3]
+INFO: [Physopt 32-735] Processed net game0/gamestart/square_y[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.838 | TNS=-150.349 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/square_y[4].  Re-placed instance game0/gamestart/square_y_reg[4]
+INFO: [Physopt 32-735] Processed net game0/gamestart/square_y[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.807 | TNS=-150.267 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[5].  Re-placed instance game0/gamestart/count_time_reg[5]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.807 | TNS=-150.026 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[6].  Re-placed instance game0/gamestart/count_time_reg[6]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.807 | TNS=-149.785 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[7].  Re-placed instance game0/gamestart/count_time_reg[7]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.807 | TNS=-149.544 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[8].  Re-placed instance game0/gamestart/count_time_reg[8]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.778 | TNS=-149.303 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[25].  Re-placed instance game0/gamestart/count_time_reg[25]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.778 | TNS=-149.091 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[26].  Re-placed instance game0/gamestart/count_time_reg[26]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[26]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.778 | TNS=-148.879 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[27].  Re-placed instance game0/gamestart/count_time_reg[27]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[27]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.778 | TNS=-148.667 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[28].  Re-placed instance game0/gamestart/count_time_reg[28]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[28]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.760 | TNS=-148.478 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[10].  Re-placed instance game0/gamestart/count_time_reg[10]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.760 | TNS=-148.307 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[11].  Re-placed instance game0/gamestart/count_time_reg[11]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.760 | TNS=-148.136 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/count_time_reg_n_0_[12].  Re-placed instance game0/gamestart/count_time_reg[12]
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time_reg_n_0_[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.760 | TNS=-147.965 |
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg_n_0_[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net game0/gamestart/score[1].  Re-placed instance game0/gamestart/score_reg[1]
+INFO: [Physopt 32-735] Processed net game0/gamestart/score[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.756 | TNS=-145.220 |
+INFO: [Physopt 32-702] Processed net game0/gamestart/square_x[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net game0/gamestart/next_y[3].  Re-placed instance game0/gamestart/next_y_reg[3]
+INFO: [Physopt 32-735] Processed net game0/gamestart/next_y[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.742 | TNS=-144.329 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/next_y[3].  Re-placed instance game0/gamestart/next_y_reg[3]
+INFO: [Physopt 32-735] Processed net game0/gamestart/next_y[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.699 | TNS=-144.152 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/score[0].  Re-placed instance game0/gamestart/score_reg[0]
+INFO: [Physopt 32-735] Processed net game0/gamestart/score[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.664 | TNS=-142.577 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/score[4].  Re-placed instance game0/gamestart/score_reg[4]
+INFO: [Physopt 32-735] Processed net game0/gamestart/score[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.662 | TNS=-142.487 |
+INFO: [Physopt 32-702] Processed net game0/gamestart/score[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/CO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg[31]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg[31]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg[31]_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time[31]_i_38_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.657 | TNS=-141.587 |
+INFO: [Physopt 32-663] Processed net game0/gamestart/next_y[0].  Re-placed instance game0/gamestart/next_y_reg[0]
+INFO: [Physopt 32-735] Processed net game0/gamestart/next_y[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.642 | TNS=-141.309 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time[31]_i_39_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.623 | TNS=-139.014 |
+INFO: [Physopt 32-702] Processed net game0/gamestart/square_y[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net game0/gamestart/square_y[4]_i_2_n_0. Critical path length was reduced through logic transformation on cell game0/gamestart/square_y[4]_i_2_comp.
+INFO: [Physopt 32-735] Processed net game0/gamestart/act_reg[1]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.591 | TNS=-138.053 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time[31]_i_30_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.574 | TNS=-137.288 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time[31]_i_37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.561 | TNS=-136.703 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time[31]_i_19_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.561 | TNS=-136.703 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time[31]_i_28_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.553 | TNS=-136.343 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time[31]_i_20_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.547 | TNS=-136.073 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time[31]_i_21_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.536 | TNS=-135.578 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net game0/gamestart/count_time[31]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.530 | TNS=-135.308 |
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time[31]_i_39_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time[31]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net game0/gamestart/B[2].  Re-placed instance game0/gamestart/state2_i_5
+INFO: [Physopt 32-735] Processed net game0/gamestart/B[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.478 | TNS=-132.968 |
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_101_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_136_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_91_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_126_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_92_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_127_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_121_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_81_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_116_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_151_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_71_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state5[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_148_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_n_105. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg_n_0_[11]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/map[8]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net game0/gamestart/difficulty[25]_i_7_n_0.  Re-placed instance game0/gamestart/difficulty[25]_i_7_comp
-INFO: [Physopt 32-735] Processed net game0/gamestart/difficulty[25]_i_7_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.396 | TNS=-130.103 |
-INFO: [Physopt 32-663] Processed net game0/gamestart/difficulty_reg_n_0_[7].  Re-placed instance game0/gamestart/difficulty_reg[7]
-INFO: [Physopt 32-735] Processed net game0/gamestart/difficulty_reg_n_0_[7]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.357 | TNS=-130.013 |
-INFO: [Physopt 32-663] Processed net game0/gamestart/difficulty[25]_i_7_n_0.  Re-placed instance game0/gamestart/difficulty[25]_i_7_comp
-INFO: [Physopt 32-735] Processed net game0/gamestart/difficulty[25]_i_7_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.346 | TNS=-129.947 |
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[25]_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[25]_i_25_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[15]_i_4_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[15]_i_5_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[11]_i_5_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_38_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_35_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_43_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_85_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_75_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_118_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_63_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_70_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_126_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_109_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_119_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_25_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_51_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_92_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_18_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_50_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_49_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_91_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_58_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_97_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/state[1]_i_11_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg_n_0_[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/score[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/CO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time[31]_i_39_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time[31]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_151_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state5[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_n_105. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.346 | TNS=-129.947 |
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2161.004 ; gain = 0.000
-Phase 3 Critical Path Optimization | Checksum: 17edb0d74
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.478 | TNS=-132.968 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2164.270 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 1da6141ed
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 2161.004 ; gain = 11.379
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2164.270 ; gain = 11.387
 
 Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.346 | TNS=-129.947 |
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg_n_0_[11]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/map[8]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[25]_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[25]_i_25_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[15]_i_4_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[15]_i_5_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[11]_i_4_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[11]_i_5_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_38_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_35_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_43_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_85_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_40_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_75_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_118_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_63_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_70_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_126_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_109_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_119_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_37_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_25_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_51_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_92_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_18_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_50_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_49_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_91_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_58_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_97_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/state[1]_i_11_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.478 | TNS=-132.968 |
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg_n_0_[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/score[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/CO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg[31]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg[31]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg[31]_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time[31]_i_39_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time[31]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_101_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_136_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_91_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_126_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_92_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_127_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_121_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_81_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_116_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_151_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_71_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state5[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_148_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_n_105. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg_n_0_[11]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/map[8]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[25]_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[25]_i_25_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[15]_i_4_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[15]_i_5_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/score_reg[11]_i_5_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_38_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_35_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_43_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_85_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_75_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_118_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_63_n_5. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[25]_i_70_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_126_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_109_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_119_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_25_n_4. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_51_n_6. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_92_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_18_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_50_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_49_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_91_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty_reg[26]_i_58_n_7. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_97_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/state[1]_i_11_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net game0/gamestart/difficulty[26]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time_reg_n_0_[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/score[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/CO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time[31]_i_39_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/count_time[31]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_151_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state4[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state5[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net game0/gamestart/state2_n_105. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.346 | TNS=-129.947 |
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2161.004 ; gain = 0.000
-Phase 4 Critical Path Optimization | Checksum: 17edb0d74
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.478 | TNS=-132.968 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2164.270 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 1da6141ed
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 2161.004 ; gain = 11.379
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2161.004 ; gain = 0.000
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-4.346 | TNS=-129.947 |
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2164.270 ; gain = 11.387
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2164.270 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.478 | TNS=-132.968 |
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -854,29 +933,29 @@ Summary of Physical Synthesis Optimizations
 |  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 |  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Critical Path  |          0.487  |          4.097  |            1  |              0  |                    11  |           0  |           2  |  00:00:02  |
-|  Total          |          0.487  |          4.097  |            1  |              0  |                    11  |           0  |           3  |  00:00:02  |
+|  Critical Path  |          0.360  |         17.709  |            0  |              0  |                    33  |           0  |           2  |  00:00:03  |
+|  Total          |          0.360  |         17.709  |            0  |              0  |                    33  |           0  |           3  |  00:00:03  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2161.004 ; gain = 0.000
-Ending Physical Synthesis Task | Checksum: 1163a1793
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2164.270 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 16e908683
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 2161.004 ; gain = 11.379
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2164.270 ; gain = 11.387
 INFO: [Common 17-83] Releasing license: Implementation
-253 Infos, 54 Warnings, 54 Critical Warnings and 0 Errors encountered.
+332 Infos, 54 Warnings, 54 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2167.523 ; gain = 0.004
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.415 . Memory (MB): peak = 2167.523 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2167.523 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2170.805 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.402 . Memory (MB): peak = 2170.805 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2170.805 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2167.523 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2167.523 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2167.523 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.451 . Memory (MB): peak = 2167.523 ; gain = 0.004
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2170.805 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2170.805 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2170.805 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.434 . Memory (MB): peak = 2170.805 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/top_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
@@ -894,74 +973,74 @@ Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: 73d2f9e0 ConstDB: 0 ShapeSum: 87905ab RouteDB: 0
-Post Restoration Checksum: NetGraph: 719c071b | NumContArr: 580b86c4 | Constraints: c2a8fa9d | Timing: c2a8fa9d
-Phase 1 Build RT Design | Checksum: 24ef98319
+Checksum: PlaceDB: 4ee470dd ConstDB: 0 ShapeSum: 6e02b979 RouteDB: 0
+Post Restoration Checksum: NetGraph: faf09357 | NumContArr: a48455c7 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 324c6de58
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2374.355 ; gain = 197.727
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2361.703 ; gain = 181.789
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 24ef98319
+Phase 2.1 Fix Topology Constraints | Checksum: 324c6de58
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2374.355 ; gain = 197.727
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2361.703 ; gain = 181.789
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 24ef98319
+Phase 2.2 Pre Route Cleanup | Checksum: 324c6de58
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2374.355 ; gain = 197.727
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2361.703 ; gain = 181.789
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
-Phase 2.3 Update Timing | Checksum: 29a921043
+Phase 2.3 Update Timing | Checksum: 31713952e
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2489.859 ; gain = 313.230
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.104 | TNS=-120.129| WHS=-0.126 | THS=-27.980|
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2457.402 ; gain = 277.488
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.169 | TNS=-112.743| WHS=-0.126 | THS=-26.168|
 
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.000130565 %
-  Global Horizontal Routing Utilization  = 0.000127877 %
+  Global Vertical Routing Utilization    = 0.000731166 %
+  Global Horizontal Routing Utilization  = 0.000809889 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 7852
+  Number of Failed Nets               = 7479
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 7850
+  Number of Unrouted Nets             = 7477
   Number of Partially Routed Nets     = 2
   Number of Node Overlaps             = 1
 
-Phase 2 Router Initialization | Checksum: 270934433
+Phase 2 Router Initialization | Checksum: 2a0ef8a76
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 270934433
+Phase 3.1 Global Routing | Checksum: 2a0ef8a76
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 3.2 Initial Net Routing
-Phase 3.2 Initial Net Routing | Checksum: 16fc5eeee
+Phase 3.2 Initial Net Routing | Checksum: 233f173cc
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2511.688 ; gain = 335.059
-Phase 3 Initial Routing | Checksum: 16fc5eeee
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2477.988 ; gain = 298.074
+Phase 3 Initial Routing | Checksum: 233f173cc
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2511.688 ; gain = 335.059
-INFO: [Route 35-580] Design has 19 pins with tight setup and hold constraints.
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2477.988 ; gain = 298.074
+INFO: [Route 35-580] Design has 6 pins with tight setup and hold constraints.
 
 The top 5 pins with tight setup and hold constraints:
 
 +====================+===================+===================================+
 | Launch Setup Clock | Launch Hold Clock | Pin                               |
 +====================+===================+===================================+
-| clk                | clk               | game0/gamestart/score_reg[15]/D   |
-| clk                | clk               | game0/gamestart/score_reg[14]/D   |
-| clk                | clk               | game0/gamestart/isMovable_reg/D   |
-| clk                | clk               | game0/gamestart/score_reg[13]/D   |
+| clk                | clk               | game0/gamestart/square_y_reg[0]/D |
 | clk                | clk               | game0/gamestart/square_x_reg[2]/D |
+| clk                | clk               | game0/gamestart/square_x_reg[0]/D |
+| clk                | clk               | game0/gamestart/isMovable_reg/D   |
+| clk                | clk               | game0/gamestart/square_x_reg[1]/D |
 +--------------------+-------------------+-----------------------------------+
 
 File with complete list of pins: tight_setup_hold_pins.txt
@@ -970,114 +1049,84 @@ File with complete list of pins: tight_setup_hold_pins.txt
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 4602
- Number of Nodes with overlaps = 1561
- Number of Nodes with overlaps = 776
- Number of Nodes with overlaps = 316
- Number of Nodes with overlaps = 118
- Number of Nodes with overlaps = 24
- Number of Nodes with overlaps = 21
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 5442
+ Number of Nodes with overlaps = 1488
+ Number of Nodes with overlaps = 648
+ Number of Nodes with overlaps = 147
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 14
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.927 | TNS=-143.983| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.071 | TNS=-159.677| WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 1ea6ef5b3
+Phase 4.1 Global Iteration 0 | Checksum: 19c6320d0
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 167
+ Number of Nodes with overlaps = 1487
+ Number of Nodes with overlaps = 652
+ Number of Nodes with overlaps = 289
+ Number of Nodes with overlaps = 120
  Number of Nodes with overlaps = 50
- Number of Nodes with overlaps = 28
- Number of Nodes with overlaps = 15
- Number of Nodes with overlaps = 14
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 6
  Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.849 | TNS=-138.405| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.241 | TNS=-150.831| WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1781f7b67
+Phase 4.2 Global Iteration 1 | Checksum: 18e8280b8
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
+Phase 4 Rip-up And Reroute | Checksum: 18e8280b8
 
-Phase 4.3 Global Iteration 2
- Number of Nodes with overlaps = 135
- Number of Nodes with overlaps = 30
- Number of Nodes with overlaps = 16
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 4
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.764 | TNS=-137.322| WHS=N/A    | THS=N/A    |
-
-Phase 4.3 Global Iteration 2 | Checksum: 1da0b6ac6
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 2511.688 ; gain = 335.059
-
-Phase 4.4 Global Iteration 3
- Number of Nodes with overlaps = 112
- Number of Nodes with overlaps = 27
- Number of Nodes with overlaps = 20
- Number of Nodes with overlaps = 10
- Number of Nodes with overlaps = 5
- Number of Nodes with overlaps = 5
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.803 | TNS=-140.503| WHS=N/A    | THS=N/A    |
-
-Phase 4.4 Global Iteration 3 | Checksum: 2239e469a
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 2511.688 ; gain = 335.059
-Phase 4 Rip-up And Reroute | Checksum: 2239e469a
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1a90fde45
+Phase 5.1.1 Update Timing | Checksum: 1ecc03301
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 2511.688 ; gain = 335.059
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.674 | TNS=-133.488| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.981 | TNS=-153.986| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 1b95a8ba4
+Phase 5.1 Delay CleanUp | Checksum: 1dbd71529
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1b95a8ba4
+Phase 5.2 Clock Skew Optimization | Checksum: 1dbd71529
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 2511.688 ; gain = 335.059
-Phase 5 Delay and Skew Optimization | Checksum: 1b95a8ba4
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
+Phase 5 Delay and Skew Optimization | Checksum: 1dbd71529
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 2441affe1
+Phase 6.1.1 Update Timing | Checksum: 23ba96f89
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2511.688 ; gain = 335.059
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.661 | TNS=-132.136| WHS=0.132  | THS=0.000  |
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.849 | TNS=-151.864| WHS=0.146  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 2441affe1
+Phase 6.1 Hold Fix Iter | Checksum: 23ba96f89
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2511.688 ; gain = 335.059
-Phase 6 Post Hold Fix | Checksum: 2441affe1
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
+Phase 6 Post Hold Fix | Checksum: 23ba96f89
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.27612 %
-  Global Horizontal Routing Utilization  = 1.67536 %
+  Global Vertical Routing Utilization    = 1.08858 %
+  Global Horizontal Routing Utilization  = 1.55874 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -1091,10 +1140,10 @@ Router Utilization Summary
 --GLOBAL Congestion:
 Utilization threshold used for congestion level computation: 0.85
 Congestion Report
-North Dir 1x1 Area, Max Cong = 70.2703%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 69.3694%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 77.9412%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 69.1176%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 66.6667%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 73.8739%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 79.4118%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 76.4706%, No Congested Regions.
 
 ------------------------------
 Reporting congestion hotspots
@@ -1116,45 +1165,45 @@ Direction: West
 Congested clusters found at Level 0
 Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 
-Phase 7 Route finalize | Checksum: 2441affe1
+Phase 7 Route finalize | Checksum: 23ba96f89
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 2441affe1
+Phase 8 Verifying routed nets | Checksum: 23ba96f89
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1dc756bb0
+Phase 9 Depositing Routes | Checksum: 24a5290c2
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.661 | TNS=-132.136| WHS=0.132  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.849 | TNS=-151.864| WHS=0.146  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 1dc756bb0
+Phase 10 Post Router Timing | Checksum: 24a5290c2
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 2477.988 ; gain = 298.074
 INFO: [Route 35-16] Router Completed Successfully
 
 Phase 11 Post-Route Event Processing
-Phase 11 Post-Route Event Processing | Checksum: 14d0aa76e
+Phase 11 Post-Route Event Processing | Checksum: 12ce29057
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2511.688 ; gain = 335.059
-Ending Routing Task | Checksum: 14d0aa76e
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 2477.988 ; gain = 298.074
+Ending Routing Task | Checksum: 12ce29057
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2511.688 ; gain = 335.059
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 2477.988 ; gain = 298.074
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-274 Infos, 55 Warnings, 54 Critical Warnings and 0 Errors encountered.
+351 Infos, 55 Warnings, 54 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:34 . Memory (MB): peak = 2511.688 ; gain = 344.164
+route_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2477.988 ; gain = 307.184
 INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -1175,7 +1224,7 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-284 Infos, 56 Warnings, 54 Critical Warnings and 0 Errors encountered.
+361 Infos, 56 Warnings, 54 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
@@ -1189,16 +1238,16 @@ INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_sk
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2511.688 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.377 . Memory (MB): peak = 2511.688 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2511.688 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2477.988 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.354 . Memory (MB): peak = 2477.988 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2477.988 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 2511.688 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2511.688 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2511.688 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.472 . Memory (MB): peak = 2511.688 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.068 . Memory (MB): peak = 2477.988 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2477.988 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2477.988 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.446 . Memory (MB): peak = 2477.988 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/impl_1/top_routed.dcp' has been generated.
 Command: write_bitstream -force top.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
@@ -1215,8 +1264,11 @@ WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Nei
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-WARNING: [DRC PDRC-153] Gated clock check: Net game0/E[0] is a gated clock net sourced by a combinational pin game0/color_reg[7]_i_2/O, cell game0/color_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+WARNING: [DRC DPIP-1] Input pipelining: DSP game0/gamestart/state2 input game0/gamestart/state2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP game0/gamestart/state2 output game0/gamestart/state2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP game0/gamestart/state2 multiplier stage game0/gamestart/state2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDRC-153] Gated clock check: Net game0/E[0] is a gated clock net sourced by a combinational pin game0/color_reg[11]_i_2/O, cell game0/color_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 5 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -1229,7 +1281,7 @@ Writing bitstream ./top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-14 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+14 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 2973.266 ; gain = 461.578
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  9 15:30:50 2024...
+write_bitstream: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2928.777 ; gain = 450.789
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 10 11:37:59 2024...

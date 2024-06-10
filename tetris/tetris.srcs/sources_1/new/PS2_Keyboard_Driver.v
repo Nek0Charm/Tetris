@@ -31,13 +31,10 @@ module PS2_Keyboard_Driver(
     output reg [7:0] data,  // 打包提取数据
     output reg ready
     );
-
     localparam Idle = 2'b00, Rece = 2'b01, Ignore = 2'b10;
-
     reg [9:0] PS2_shift = 10'b1000000000;
     reg [1:0] state = Idle;
     reg [1:0] Fall_Clk;
-
     initial begin
         ready <= 0;
     end
@@ -45,7 +42,6 @@ module PS2_Keyboard_Driver(
     always @(posedge clk) begin
         Fall_Clk <= {Fall_Clk[0], PS2C};
     end
-
     always @(posedge clk) begin
         if (rst) begin
             PS2_shift <= 10'b1000000000;

@@ -35,22 +35,21 @@ module tetris_logic(
     output reg [15:0] score
 );
     parameter I = 3'b000, J = 3'b001, L = 3'b010, Z = 3'b011, S = 3'b100, T = 3'b101, O = 3'b110;
-    parameter   INIT = 3'b000, 
-                GENERATOR = 3'b001, 
-                WAIT = 3'b010, 
-                CHECK_IF_MOVABLE = 3'b011, 
-                CHECK_COMPLETE_ROW = 3'b100, 
-                DELETE_ROW = 3'b101, 
-                CHECK_IF_OVER = 3'b110,
-                UPDATE_MAP = 3'b111;
+    parameter   INIT = 4'b0000, 
+                GENERATOR = 4'b0001, 
+                WAIT = 4'b0010, 
+                CHECK_IF_MOVABLE = 4'b0011, 
+                CHECK_COMPLETE_ROW = 4'b0100, 
+                DELETE_ROW = 4'b0101, 
+                CHECK_IF_OVER = 4'b0110,
+                UPDATE_MAP = 4'b0111,
+                STOP = 4'b1000;
     parameter FALL = 2'b00, LEFT = 2'b01, RIGHT = 2'b10, ROTATE = 2'b11;  
-    parameter EASY = 75000000, NORMAL = 50000000, DIFFICULT = 25000000;
-    integer difficulty;
     reg isMovable;
     reg over_sig_r;
     reg isOver;
     reg isDelete;
-    reg [2:0] state;
+    reg [3:0] state;
     reg [4:0] next_x, next_y;
     reg [7:0] rand_num;
     reg [31:0] count_time;
@@ -109,9 +108,9 @@ module tetris_logic(
     initial begin
         map = 200'b0;
         rand_num = 0;
-        Fall_ready = 2'b00;    
+        Fall_ready = 2'b00;
+        score = 0;    
         square_degree = 0;
-        difficulty = EASY;
     end
     
     
@@ -119,10 +118,8 @@ module tetris_logic(
         rand_num = rand_num + 1;
         if(rst || !start_sig) begin
             map <= 200'b0;
-            score <= 0;
             isOver <= 0;
             state <= INIT;
-            difficulty <= EASY;
         end
         else begin
             case (state)
@@ -175,7 +172,10 @@ module tetris_logic(
                         act <= FALL;
                         state <= CHECK_IF_MOVABLE;
                     end
-                    else if(count_time < difficulty) begin
+                    else if(Fall_ready == 2'b10 && keyboard_data == 8'h29) begin
+                        state <= STOP;
+                    end
+                    else if(count_time < (50 / (score + 1) + 25) * 1000000) begin
                         state <= state;
                     end
                     else begin
@@ -244,9 +244,10 @@ module tetris_logic(
                             if(square_type == I && (square_x > 7 || square_x < 1 || square_y > 18))begin
                                 isMovable = 0;
                             end
-                            else if ((square_type == S || square_type == Z) && square_x == 0) begin
+                            else if ((square_type == S || square_type == Z || square_type == J || square_type == L) 
+                                    && (square_x == 0 || square_x == 9)) begin
                                 isMovable = 0;
-                            end
+                            end                   
                             for(i = 0; i < 4; i = i+1) begin
                                 if(map[10*next_y+next_x+shape[square_type][square_degree+2'b01][i]] == 1)
                                     isMovable = 0;
@@ -280,12 +281,6 @@ module tetris_logic(
                             complete_rows = j;
                             flag = 1;
                             score = score + 1;
-                            if(score == 5) begin
-                                difficulty <= NORMAL;
-                            end
-                            else if (score == 10) begin
-                                difficulty <= DIFFICULT;
-                            end 
                         end 
                     end
                     
@@ -318,6 +313,14 @@ module tetris_logic(
                     end
                     else begin
                         state <= GENERATOR;
+                    end
+                end
+                STOP: begin
+                    if(Fall_ready == 2'b10 && keyboard_data == 8'h29) begin
+                        state <= WAIT;
+                    end
+                    else begin
+                        state <= state;
                     end
                 end
             endcase

@@ -63,7 +63,7 @@ module game(
         end
         case (state)
             Start: begin
-                if(Fall_ready == 2'b10 && (keyboard_data == 8'h1c)) begin
+                if(Fall_ready == 2'b10 && (keyboard_data == 8'h29)) begin
                     state <= Playing;
                 end
                 else begin
