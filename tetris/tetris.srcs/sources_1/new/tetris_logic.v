@@ -244,7 +244,7 @@ module tetris_logic(
                             if(square_type == I && (square_x > 7 || square_x < 1 || square_y > 18))begin
                                 isMovable = 0;
                             end
-                            else if ((square_type == S || square_type == Z || square_type == J || square_type == L) 
+                            else if ((square_type != O) 
                                     && (square_x == 0 || square_x == 9)) begin
                                 isMovable = 0;
                             end                   
