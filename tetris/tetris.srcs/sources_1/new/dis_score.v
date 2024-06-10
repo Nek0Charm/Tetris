@@ -26,7 +26,7 @@ module dis_score(
     output [7:0] SEG,
     output [3:0] AN
     );
-    reg [15:0] bcd;
+    wire [15:0] bcd;
     wire [31:0] div_res;
     clock_div c0 (.clk(clk),.rst(1'b0),.div_res(div_res));
     bintobcd b0 

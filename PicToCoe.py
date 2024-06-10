@@ -34,8 +34,8 @@ def image_to_coe(image, coe_path):
     
     print(f"COE file has been saved to {coe_path}")
 
-input_image_path = '111.jpg'
-resized_image_path = 'resized_example.jpg'
+input_image_path = '111.png'
+resized_image_path = 'resized_example.png'
 coe_path = 'output.coe'
 
 # Step 1: Resize the image

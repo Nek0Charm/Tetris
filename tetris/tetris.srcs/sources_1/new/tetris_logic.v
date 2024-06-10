@@ -32,7 +32,9 @@ module tetris_logic(
     output reg[4:0] square_y,
     output reg[2:0] square_type,
     output reg[1:0] square_degree,
-    output reg [15:0] score
+    output reg [15:0] score,
+    output pause,
+    output reset
 );
     parameter I = 3'b000, J = 3'b001, L = 3'b010, Z = 3'b011, S = 3'b100, T = 3'b101, O = 3'b110;
     parameter   INIT = 4'b0000, 
@@ -58,6 +60,7 @@ module tetris_logic(
     assign over_sig = over_sig_r;
     integer i,j,m,k,flag;
     integer shape[6:0][3:0][3:0];
+    assign pause = (state == STOP) ? 1 : 0;
     initial begin
         // Row 0
         shape[0][0][0] = 0; shape[0][0][1] = -1; shape[0][0][2] = 1; shape[0][0][3] = 2;

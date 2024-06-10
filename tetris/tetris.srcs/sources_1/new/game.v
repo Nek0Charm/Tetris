@@ -31,7 +31,9 @@ module game(
     output  [1:0]square_degree,
     output [199:0] map,
     output [15:0] score,
-    output reg [1:0] state
+    output reg [1:0] state,
+    output pause,
+    output reset
     );
     parameter Start = 2'b00, Playing = 2'b01, Over = 2'b10;
 
@@ -52,7 +54,9 @@ module game(
                             .square_degree(square_degree),
                             .over_sig(over_sig),
                             .score(score),
-                            .map(map));
+                            .map(map),
+                            .pause(pause),
+                            .reset(reset));
     initial begin
         Fall_ready = 2'b00;
         state = Playing;    

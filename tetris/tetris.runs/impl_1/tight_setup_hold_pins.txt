@@ -1,11 +1,10 @@
 +====================+===================+=====================================+
 | Launch Setup Clock | Launch Hold Clock | Pin                                 |
 +====================+===================+=====================================+
-| clk                | clk               | game0/gamestart/square_x_reg[0]/D   |
 | clk                | clk               | game0/gamestart/isMovable_reg/D     |
-| clk                | clk               | game0/gamestart/square_x_reg[1]/D   |
 | clk                | clk               | game0/gamestart/square_x_reg[2]/D   |
 | clk                | clk               | game0/gamestart/square_y_reg[0]/D   |
-| clk                | clk               | game0/gamestart/state_reg[0]/D      |
+| clk                | clk               | game0/gamestart/square_x_reg[1]/D   |
+| clk                | clk               | game0/gamestart/square_x_reg[0]/D   |
 | clk                | clk               | game0/gamestart/count_time_reg[0]/D |
 +--------------------+-------------------+-------------------------------------+

@@ -10,7 +10,11 @@ module top (
     output HS, VS,
 	output [7:0] SEG,			//七段数码�?????
     output [3:0] AN,
-	output reg [7:0] LED
+	output reg [7:0] LED,
+	output SEG_CLK,
+	output SEG_CLR,
+	output SEG_DO,
+	output SEG_EN
 );
 
     wire clk25MHZ;
@@ -30,6 +34,7 @@ module top (
 
     reg key_rdn;
 	wire [7:0] keyboard_data;
+	wire reset,pause;
 	wire keyboard_ready;
 	wire ready;
 	reg [1:0] rdn_state;
@@ -60,7 +65,9 @@ module top (
 				.square_y(square_y),
 				.map(map),
 				.score(score),
-				.state(state));
+				.state(state),
+				.pause(pause),
+				.reset(reset));
 	display dis(.clk(clk25MHZ), 
 				.rst(rst), 
 				.square_degree(square_degree),
@@ -73,5 +80,8 @@ module top (
 				.row(row),
 				.col(col),
 				.color(pixel));
-	DispNum displaynumber(.clk(clk), .rst(rst), .HEXS(score), .EN(4'b1111), .P(4'b0000), .SEG(SEG), .AN(AN));
+
+	clock timer(.clk(clk&(!pause)),.reset(reset),.SEG_CLK(SEG_CLK),.SEG_CLR(SEG_CLR),.SEG_DO(SEG_DO),.SEG_EN(SEG_EN));
+
+	dis_score d0 (.clk(clk),.score(score),.SEG(SEG),.AN(AN));
 endmodule	
