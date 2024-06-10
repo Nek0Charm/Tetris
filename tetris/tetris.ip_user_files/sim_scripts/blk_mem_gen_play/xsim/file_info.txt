@@ -1,0 +1,2 @@
+blk_mem_gen_play.v,verilog,xil_defaultlib,../../../../tetris.gen/sources_1/ip/blk_mem_gen_play/sim/blk_mem_gen_play.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

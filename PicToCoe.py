@@ -2,7 +2,6 @@ from PIL import Image
 import numpy as np
 
 def resize_image(input_image_path, output_image_path, size=(640, 480)):
-
     img = Image.open(input_image_path)
     
     img_resized = img.resize(size, Image.LANCZOS)
@@ -24,7 +23,10 @@ def image_to_coe(image, coe_path):
     for y in range(height):
         for x in range(width):
             r, g, b = pixel_data[y, x]
-            hex_pixel = f"{r:02X}{g:02X}{b:02X}"
+            r_4bit = r >> 4
+            g_4bit = g >> 4
+            b_4bit = b >> 4
+            hex_pixel = f"{b_4bit:01X}{g_4bit:01X}{r_4bit:01X}"
             coe_content += hex_pixel + ",\n"
     
     coe_content = coe_content.rstrip(",\n") + ";"
@@ -34,12 +36,10 @@ def image_to_coe(image, coe_path):
     
     print(f"COE file has been saved to {coe_path}")
 
-input_image_path = '111.png'
-resized_image_path = 'resized_example.png'
-coe_path = 'output.coe'
+input_image_path = '游戏界面.jpg'
+resized_image_path = '游戏界面resize.jpg'
+coe_path = 'play.coe'
 
-# Step 1: Resize the image
 resized_image = resize_image(input_image_path, resized_image_path)
 
-# Step 2: Convert the resized image to COE file
 image_to_coe(resized_image, coe_path)

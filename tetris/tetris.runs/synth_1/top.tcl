@@ -78,20 +78,24 @@ create_project -in_memory -part xc7k160tffg676-2L
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.cache/wt [current_project]
 set_property parent.project_path C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.xpr [current_project]
+set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
+add_files C:/Users/csy/Desktop/Study/Logic2024/tetris/over.coe
+add_files c:/Users/csy/Desktop/Study/Logic2024/tetris/start.coe
+add_files c:/Users/csy/Desktop/Study/Logic2024/tetris/play.coe
 read_verilog -library xil_defaultlib {
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/DispNum.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Enabler.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Mux4to1.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/Mux4to1b4.v
-  C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/My74LS161.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/MyMC14495.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/PS2_Keyboard_Driver.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/bintobcd.v
@@ -106,6 +110,15 @@ read_verilog -library xil_defaultlib {
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/vga.v
   C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/new/top.v
 }
+read_ip -quiet c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_start/blk_mem_gen_start.xci
+set_property used_in_implementation false [get_files -all c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.gen/sources_1/ip/blk_mem_gen_start/blk_mem_gen_start_ooc.xdc]
+
+read_ip -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_over/blk_mem_gen_over.xci
+set_property used_in_implementation false [get_files -all c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.gen/sources_1/ip/blk_mem_gen_over/blk_mem_gen_over_ooc.xdc]
+
+read_ip -quiet c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_play/blk_mem_gen_play.xci
+set_property used_in_implementation false [get_files -all c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.gen/sources_1/ip/blk_mem_gen_play/blk_mem_gen_play_ooc.xdc]
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

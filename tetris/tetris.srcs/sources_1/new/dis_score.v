@@ -27,8 +27,6 @@ module dis_score(
     output [3:0] AN
     );
     wire [15:0] bcd;
-    wire [31:0] div_res;
-    clock_div c0 (.clk(clk),.rst(1'b0),.div_res(div_res));
     bintobcd b0 
     (
         .bin_in(score[7:0]),
@@ -39,5 +37,5 @@ module dis_score(
         .bin_in(score[15:8]),
         .bcd_out(bcd[15:8])
     );
-    DispNum display(.HEXS({bcd}), .clk(clk_div), .EN(4'b1111), .P(4'b1111), .AN(AN), .SEG(SEG));
+    DispNum display(.HEXS({bcd}), .clk(clk), .EN(4'b1111), .P(4'b1111), .AN(AN), .SEG(SEG));
 endmodule

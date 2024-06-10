@@ -59,7 +59,7 @@ module game(
                             .reset(reset));
     initial begin
         Fall_ready = 2'b00;
-        state = Playing;    
+        state = Start;    
     end
     always @(posedge clk) begin
         if(rst) begin

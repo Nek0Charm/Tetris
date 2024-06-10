@@ -135,9 +135,13 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.xpr [current_project]
   set_property ip_output_repo C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.runs/synth_1/top.dcp
+  read_ip -quiet c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_start/blk_mem_gen_start.xci
+  read_ip -quiet C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_over/blk_mem_gen_over.xci
+  read_ip -quiet c:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/sources_1/ip/blk_mem_gen_play/blk_mem_gen_play.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/csy/Desktop/Study/Logic2024/tetris/tetris/tetris.srcs/constrs_1/new/constraint.xdc
 OPTRACE "read constraints: implementation" END { }
@@ -306,6 +310,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   catch { write_mem_info -force -no_partial_mmi top.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

@@ -60,7 +60,8 @@ module tetris_logic(
     assign over_sig = over_sig_r;
     integer i,j,m,k,flag;
     integer shape[6:0][3:0][3:0];
-    assign pause = (state == STOP) ? 1 : 0;
+    assign pause = (state == STOP || over_sig_r == 1 || (state == INIT && start_sig == 0)) ? 1 : 0;
+    assign reset = (state == INIT && start_sig == 1) ? 1 : 0;
     initial begin
         // Row 0
         shape[0][0][0] = 0; shape[0][0][1] = -1; shape[0][0][2] = 1; shape[0][0][3] = 2;
@@ -278,7 +279,7 @@ module tetris_logic(
                 end
                 CHECK_COMPLETE_ROW: begin
                     complete_rows <= 0;
-                    flag <= 0;
+                    flag = 0;
                     for(j = 0;j < 20;j = j+1)begin
                         if(&map[j*10+:10]) begin
                             complete_rows = j;
@@ -306,9 +307,9 @@ module tetris_logic(
                     end            
                 end
                 CHECK_IF_OVER:begin
-                    isOver <= 0;
+                    isOver = 0;
                     if(map[40+:10]!=10'b0)begin
-                        isOver <= 1;
+                        isOver = 1;
                     end
                     if(isOver)begin
                         over_sig_r <= 1;

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Mon Jun 10 12:36:53 2024
+| Date             : Mon Jun 10 16:52:20 2024
 | Host             : LAPTOP-LCA5B7K9 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,15 +30,15 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.262        |
+| Total On-Chip Power (W)  | 0.319        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.146        |
-| Device Static (W)        | 0.115        |
+| Dynamic (W)              | 0.191        |
+| Device Static (W)        | 0.128        |
 | Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 99.5         |
-| Junction Temperature (C) | 25.5         |
-| Confidence Level         | Medium       |
+| Max Ambient (C)          | 99.4         |
+| Junction Temperature (C) | 25.6         |
+| Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
 | Design Nets Matched      | NA           |
@@ -52,19 +52,20 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.006 |        3 |       --- |             --- |
-| Slice Logic    |     0.059 |     9807 |       --- |             --- |
-|   LUT as Logic |     0.053 |     6463 |    101400 |            6.37 |
-|   CARRY4       |     0.006 |     1105 |     25350 |            4.36 |
-|   Register     |    <0.001 |      535 |    202800 |            0.26 |
+| Clocks         |     0.008 |        3 |       --- |             --- |
+| Slice Logic    |     0.063 |    12770 |       --- |             --- |
+|   LUT as Logic |     0.057 |     7782 |    101400 |            7.67 |
+|   CARRY4       |     0.005 |     1065 |     25350 |            4.20 |
+|   F7/F8 Muxes  |    <0.001 |      732 |    101400 |            0.72 |
+|   Register     |    <0.001 |      832 |    202800 |            0.41 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |      309 |    101400 |            0.30 |
-|   Others       |     0.000 |      132 |       --- |             --- |
-| Signals        |     0.067 |     7548 |       --- |             --- |
-| DSPs           |    <0.001 |        1 |       600 |            0.17 |
-| I/O            |     0.014 |       42 |       400 |           10.50 |
-| Static Power   |     0.115 |          |           |                 |
-| Total          |     0.262 |          |           |                 |
+|   Others       |     0.000 |     1029 |       --- |             --- |
+| Signals        |     0.081 |    10830 |       --- |             --- |
+| Block RAM      |     0.007 |      312 |       325 |           96.00 |
+| DSPs           |     0.001 |        3 |       600 |            0.50 |
+| I/O            |     0.030 |       42 |       400 |           10.50 |
+| Static Power   |     0.128 |          |           |                 |
+| Total          |     0.319 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,16 +75,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.173 |       0.133 |      0.041 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.207 |       0.161 |      0.046 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.010 |       0.009 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.009 |       0.001 |      0.008 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -98,12 +99,12 @@ Table of Contents
 | User Input Data             | Confidence | Details                                               | Action                                                                                                             |
 +-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                      |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                          |                                                                                                                    |
 |                             |            |                                                       |                                                                                                                    |
-| Overall confidence level    | Medium     |                                                       |                                                                                                                    |
+| Overall confidence level    | Low        |                                                       |                                                                                                                    |
 +-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 
@@ -141,16 +142,21 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------+-----------+
-| Name          | Power (W) |
-+---------------+-----------+
-| top           |     0.146 |
-|   game0       |     0.111 |
-|     gamestart |     0.111 |
-|   timer       |     0.002 |
-|     seg1      |     0.001 |
-|       s2      |     0.001 |
-|   vga0        |     0.018 |
-+---------------+-----------+
++------------------+-----------+
+| Name             | Power (W) |
++------------------+-----------+
+| top              |     0.191 |
+|   dis            |     0.019 |
+|     displayover  |     0.003 |
+|       U0         |     0.003 |
+|     displayplay  |     0.002 |
+|       U0         |     0.002 |
+|     displaystart |     0.008 |
+|       U0         |     0.008 |
+|   game0          |     0.116 |
+|     gamestart    |     0.116 |
+|   timer          |     0.002 |
+|   vga0           |     0.021 |
++------------------+-----------+
 
 
