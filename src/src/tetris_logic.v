@@ -61,7 +61,7 @@ module tetris_logic(
     integer i,j,m,k,flag;
     integer shape[6:0][3:0][3:0];
     assign pause = (state == STOP || over_sig_r == 1 || (state == INIT && start_sig == 0)) ? 1 : 0;
-    assign reset = (state == INIT && start_sig == 1) ? 1 : 0;
+    assign reset = (state == INIT && start_sig == 1 && state != GENERATOR && state != STOP) ? 1 : 0;
     initial begin
         // Row 0
         shape[0][0][0] = 0; shape[0][0][1] = -1; shape[0][0][2] = 1; shape[0][0][3] = 2;
@@ -113,7 +113,7 @@ module tetris_logic(
         map = 200'b0;
         rand_num = 0;
         Fall_ready = 2'b00;
-        score = 0;    
+        score = 0;
         square_degree = 0;
     end
     
@@ -136,6 +136,7 @@ module tetris_logic(
                         state <= GENERATOR;
                     end
                     else begin
+                        score <= score;
                         state <= state;
                     end
                 end
@@ -179,7 +180,7 @@ module tetris_logic(
                     else if(Fall_ready == 2'b10 && keyboard_data == 8'h29) begin
                         state <= STOP;
                     end
-                    else if(count_time < (50 / (score + 1) + 25) * 1000000) begin
+                    else if(count_time < (200 / (score + 4) + 35) * 1000000) begin
                         state <= state;
                     end
                     else begin

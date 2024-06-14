@@ -36,9 +36,9 @@ def image_to_coe(image, coe_path):
     
     print(f"COE file has been saved to {coe_path}")
 
-input_image_path = '游戏界面.jpg'
-resized_image_path = '游戏界面resize.jpg'
-coe_path = 'play.coe'
+input_image_path = "C:\\Users\\csy\\Desktop\\Study\\Logic2024\\tetris\\src\\111.jpg"
+resized_image_path = '1111.jpg'
+coe_path = '111.coe'
 
 resized_image = resize_image(input_image_path, resized_image_path)
 
